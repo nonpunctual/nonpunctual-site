@@ -1,0 +1,6 @@
+<figure class="pullquote">
+  <blockquote>{{ index .Params 0 }}</blockquote>
+  {{ with index .Params 1 }}
+  <figcaption>— {{ . }}</figcaption>
+  {{ end }}
+</figure>

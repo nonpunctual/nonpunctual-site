@@ -1,0 +1,314 @@
+body.colorscheme-dark {
+  background-color: #091520;
+}
+
+body.colorscheme-dark .notice.note {
+  background-color: #8c8c8c1a;
+}
+
+body.colorscheme-dark .notice.note .notice-title {
+  background-color: #8c8c8c33;
+}
+
+body.colorscheme-dark .notice.note .notice-title i {
+  color: #8c8c8c;
+}
+
+body.colorscheme-dark .notice.tip {
+  background-color: #3d6b351a;
+}
+
+body.colorscheme-dark .notice.tip .notice-title {
+  background-color: #3d6b3533;
+}
+
+body.colorscheme-dark .notice.tip .notice-title i {
+  color: #3d6b35;
+}
+
+body.colorscheme-dark .notice.info {
+  background-color: #76d6ff1a;
+}
+
+body.colorscheme-dark .notice.info .notice-title {
+  background-color: #76d6ff33;
+}
+
+body.colorscheme-dark .notice.info .notice-title i {
+  color: #76d6ff;
+}
+
+body.colorscheme-dark .notice.question {
+  background-color: #ffffff1a;
+}
+
+body.colorscheme-dark .notice.question .notice-title {
+  background-color: #ffffff33;
+}
+
+body.colorscheme-dark .notice.question .notice-title i {
+  color: #ffffff;
+}
+
+body.colorscheme-light .notice.tip {
+  background-color: #ff80001a;
+}
+
+body.colorscheme-light .notice.tip .notice-title {
+  background-color: #ff800033;
+}
+
+body.colorscheme-light .notice.tip .notice-title i {
+  color: #ff8000;
+}
+
+.notice {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.contact-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.contact-social ul li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.contact-social ul li a {
+  color: #000;
+}
+
+body.colorscheme-dark .contact-social ul li a {
+  color: #fff;
+}
+
+/* Mermaid Gantt - light mode */
+.mermaid rect.task,
+.mermaid rect.task0,
+.mermaid rect.task1,
+.mermaid rect.task2,
+.mermaid rect.task3 {
+  fill: #222 !important;
+  stroke: #222 !important;
+}
+
+.mermaid .taskText,
+.mermaid .taskTextOutsideRight,
+.mermaid .taskTextOutsideLeft {
+  fill: #fff !important;
+}
+
+.mermaid text {
+  fill: #000 !important;
+}
+
+.mermaid .taskText {
+  fill: #fff !important;
+}
+
+.mermaid rect[class^="section"],
+.mermaid rect[class*=" section"] {
+  fill: transparent !important;
+  opacity: 0 !important;
+}
+
+.mermaid .grid path,
+.mermaid .grid .tick line {
+  stroke: #ccc !important;
+}
+
+.mermaid line.today {
+  stroke: #000 !important;
+}
+
+/* Mermaid Gantt - dark mode */
+body.colorscheme-dark .mermaid rect.task,
+body.colorscheme-dark .mermaid rect.task0,
+body.colorscheme-dark .mermaid rect.task1,
+body.colorscheme-dark .mermaid rect.task2,
+body.colorscheme-dark .mermaid rect.task3 {
+  fill: #fff !important;
+  stroke: #fff !important;
+}
+
+body.colorscheme-dark .mermaid .taskText,
+body.colorscheme-dark .mermaid .taskTextOutsideRight,
+body.colorscheme-dark .mermaid .taskTextOutsideLeft {
+  fill: #000 !important;
+}
+
+body.colorscheme-dark .mermaid text {
+  fill: #fff !important;
+}
+
+body.colorscheme-dark .mermaid .taskText {
+  fill: #000 !important;
+}
+
+body.colorscheme-dark .mermaid rect[class^="section"],
+body.colorscheme-dark .mermaid rect[class*=" section"] {
+  fill: transparent !important;
+  opacity: 0 !important;
+}
+
+body.colorscheme-dark .mermaid .grid path,
+body.colorscheme-dark .mermaid .grid .tick line {
+  stroke: #444 !important;
+}
+
+body.colorscheme-dark .mermaid line.today {
+  stroke: #fff !important;
+}
+
+.pullquote {
+  text-align: center;
+  margin: 3rem 0;
+  width: 100%;
+}
+
+.pullquote blockquote {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  border-left: none !important;
+  padding-left: 0 !important;
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.pullquote figcaption {
+  margin-top: 0.6rem;
+  font-size: 1.8rem;
+  font-style: normal;
+  text-align: left;
+  padding-left: 25%;
+  opacity: 0.7;
+}
+
+.people {
+  display: inline-block;
+}
+
+.people .separator {
+  margin: 0 0.3rem;
+}
+
+.gear-photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.gear-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.audio-player {
+  margin: 2rem 0;
+}
+
+.audio-player audio {
+  width: 100%;
+}
+
+.pdf-embed {
+  margin: 2rem 0;
+}
+
+.pdf-embed iframe {
+  width: 100%;
+  height: 80vh;
+  border: none;
+}
+
+.pdf-embed a {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.apple-music {
+  margin: 2rem 0;
+}
+
+.apple-music iframe {
+  width: 100%;
+  max-width: 660px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 94.5rem;
+}
+
+.navigation-title {
+  font-size: 2.47rem !important;
+}
+
+.tags .tag a {
+  text-transform: lowercase;
+}
+
+.date {
+  font-variant-numeric: tabular-nums;
+}
+
+pre {
+  white-space: pre;
+  overflow-x: auto;
+}
+
+:not(pre) > code {
+  white-space: nowrap;
+}
+
+.list ul li {
+  margin-bottom: 0.91rem;
+  align-items: baseline;
+}
+
+.list ul li .title {
+  line-height: 1.1;
+}
+
+.content article p {
+  text-align: left;
+  hyphens: none;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+}
+
+.about h2 code {
+  font-size: 1.9rem;
+  line-height: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about h2 p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.avatar img {
+  width: 100%;
+  max-width: 44rem;
+  height: auto;
+  border-radius: 0;
+}

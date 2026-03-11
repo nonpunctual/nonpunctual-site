@@ -1,0 +1,7 @@
+<div class="pdf-embed">
+  <details>
+    <summary>{{ index .Params 1 }}</summary>
+    <iframe src="/docs/{{ index .Params 0 }}" title="{{ index .Params 1 }}"></iframe>
+    <a href="/docs/{{ index .Params 0 }}" target="_blank">Open PDF</a>
+  </details>
+</div>

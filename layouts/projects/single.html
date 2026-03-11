@@ -1,0 +1,42 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="{{ .Permalink | safeURL }}">
+              {{ .Title }}
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              {{ with .Params.year }}{{ . }}{{ end }}
+            </span>
+          </div>
+          {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+          {{ with .Params.people }}
+          <div class="people">
+            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            {{- range $index, $person := . -}}
+              {{- if gt $index 0 }}
+                <span class="separator">•</span>
+              {{- end }}
+              <span class="person">{{ $person }}</span>
+            {{- end }}
+          </div>
+          {{ end }}
+        </div>
+      </header>
+
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+    </article>
+  </section>
+{{ end }}
