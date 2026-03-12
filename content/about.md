@@ -1,7 +1,7 @@
 +++
 title = "about"
 date = "2026-03-07"
-description = "Brock Walters is way too late in the game to be publishing his first website and this should tell you almost everything you need to know."
+description = "Brock Walters is nonpunctual."
 keywords = []
 aliases = []
 draft = false

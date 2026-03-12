@@ -1,0 +1,36 @@
+{{ define "title" }}
+  {{ if eq .Kind "term" }}
+    {{ .Title }} · {{ .Site.Title }}
+  {{ else }}
+    tags · {{ .Site.Title }}
+  {{ end }}
+{{ end }}
+{{ define "content" }}
+  {{ if eq .Kind "term" }}
+    <section class="container list">
+      <header>
+        <h1 class="title">
+          <a class="title-link" href="{{ .Permalink | safeURL }}">{{ .Title }}</a>
+        </h1>
+      </header>
+      <ul>
+        {{ range .Paginator.Pages }}
+        <li>
+          <span class="date">{{ .Date | time.Format $.Site.Params.dateFormat }}</span>
+          <a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      {{ partial "pagination.html" . }}
+    </section>
+  {{ else }}
+    <section class="container">
+      <header>
+        <h1 class="title">
+          <a class="title-link" href="{{ .Permalink | safeURL }}">tags</a>
+        </h1>
+      </header>
+      {{ partial "tagcloud.html" . }}
+    </section>
+  {{ end }}
+{{ end }}

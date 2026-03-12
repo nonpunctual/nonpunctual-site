@@ -1,0 +1,59 @@
+{{ define "title" }}
+  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container pictures">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          pictures <span class="list-count">({{ len .Sections }})</span>
+        </a>
+      </h1>
+    </header>
+    {{ range .Sections }}
+      <div class="pictures-grid">
+        {{ range .Resources.ByType "image" }}
+          {{ $thumb := .Fill "150x150 Center" }}
+          <a class="pictures-thumb" href="#" data-full="{{ .RelPermalink }}">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
+          </a>
+        {{ end }}
+      </div>
+      <h3 class="pictures-category">{{ .Title }}</h3>
+    {{ end }}
+  </section>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+  (function() {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.pictures-thumb').forEach(function(thumb) {
+      thumb.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightboxImg.src = this.dataset.full;
+        lightbox.classList.add('lightbox--open');
+        lightbox.setAttribute('aria-hidden', 'false');
+      });
+    });
+
+    lightbox.addEventListener('click', function() {
+      lightbox.classList.remove('lightbox--open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('lightbox--open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+      }
+    });
+  })();
+  </script>
+{{ end }}

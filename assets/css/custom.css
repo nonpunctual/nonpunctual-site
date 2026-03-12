@@ -109,10 +109,6 @@ body.colorscheme-dark .contact-social ul li a {
   font-size: 14px !important;
 }
 
-.mermaid .taskText {
-  fill: #fff !important;
-}
-
 .mermaid rect[class^="section"],
 .mermaid rect[class*=" section"] {
   fill: transparent !important;
@@ -146,10 +142,6 @@ body.colorscheme-dark .mermaid .taskTextOutsideLeft {
 
 body.colorscheme-dark .mermaid text {
   fill: #fff !important;
-}
-
-body.colorscheme-dark .mermaid .taskText {
-  fill: #000 !important;
 }
 
 body.colorscheme-dark .mermaid rect[class^="section"],
@@ -310,6 +302,71 @@ pre {
 .list-count {
   font-size: 0.45em;
   font-weight: normal;
+}
+
+.tagcloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.tagcloud-item {
+  line-height: 1.4;
+}
+
+.tagcloud-item sup {
+  font-size: 0.6em;
+  opacity: 0.6;
+  margin-left: 0.15em;
+}
+
+.pictures-category {
+  margin-top: 1.65rem;
+  margin-bottom: 5rem;
+  opacity: 0.65;
+}
+
+.pictures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 4px;
+}
+
+.pictures-thumb img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 1000;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox--open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.avatar a {
+  cursor: pointer;
 }
 
 .avatar img {

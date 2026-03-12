@@ -5,7 +5,8 @@ languageCode = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 
-# Compost (wins!)
+# hugo-coder (wins!)
+# Compost
 # dolt
 # LoveIt
 # Paper (too simple?)
@@ -206,28 +207,38 @@ url = ""
 languageName = ":us:"
 
 [[languages.en.menu.main]]
-name = "projects"
+name = "tags"
 weight =1
+url = "tags/"
+
+[[languages.en.menu.main]]
+name = "projects"
+weight =2
 url = "projects/"
 
 [[languages.en.menu.main]]
 name = "posts"
-weight = 2
+weight = 3
 url = "posts/"
 
 [[languages.en.menu.main]]
+name = "pictures"
+weight =4
+url = "pictures/"
+
+[[languages.en.menu.main]]
 name = "gear"
-weight = 3
+weight = 5
 url = "gear/"
 
 [[languages.en.menu.main]]
 name = "contact"
-weight = 4
+weight = 6
 url = "contact/"
 
 [[languages.en.menu.main]]
 name = "about"
-weight = 5
+weight = 7
 url = "about/"
 
 # [languages.pt-br]
