@@ -106,6 +106,7 @@ body.colorscheme-dark .contact-social ul li a {
 
 .mermaid text {
   fill: #000 !important;
+  font-size: 14px !important;
 }
 
 .mermaid .taskText {
@@ -304,6 +305,11 @@ pre {
   display: inline;
   margin: 0;
   padding: 0;
+}
+
+.list-count {
+  font-size: 0.45em;
+  font-weight: normal;
 }
 
 .avatar img {

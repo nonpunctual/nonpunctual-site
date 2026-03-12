@@ -58,20 +58,20 @@ Here is an interactive script for removing a System Root certificate:
 
 
 
-# variables & text functions
+# variables & text / ops functions
 keychn='/System/Library/Keychains/SystemRootCertificates.keychain'
 
-txtcrt(){ echo "\nUse one of the following options to identify a System Root Certificate for deletion:\n\n1) Common Name\n2) SHA-1 hash\n" ; }
-txtdel(){ echo "\nDo you want to permanently delete the following System Root certficate?\n\n$dspnam\n$dsphsh\nType \"yes\" at the prompt to delete or \"no\" to cancel...\n" ; }
-txtent(){ echo "Please enter \"1\" or \"2\". Thanks.\n" ; }
-txterr(){ echo "ERROR: this certificate could not be found in the keychain.\n" ; }
-txtmth(){ echo "Paste in the $method of the System Root Certificate you would like to delete.\nThe $method can be copied by secondary clicking on the certificate in Keychain\nAccess & selecting \"Get Info\":\n" ; }
-txtsip(){ echo "\nERROR: System Integrity Protection must be disabled to delete System Root\ncertificates. Restart the computer from the Recovery HD to disable SIP.\n" ; }
-txtusr(){ echo "\nERROR: this script must be executed by the root user or with sudo!\n" ; }
+txtack(){ printf "\nCertificate deleted!\n\n" ; }
+txtcrt(){ printf "\nUse one of the following options to identify a System Root Certificate for deletion:\n\n1) Common Name\n2) SHA-1 hash\n\n" ; }
+txtdel(){ printf "Do you want to permanently delete the following System Root certficate?\n\n%s\n%s\n\nType \"yes\" at the prompt to delete or \"no\" to cancel...\n\n" "$dspnam" "$dsphsh" ; }
+txtent(){ printf "\nPlease enter \"1\" or \"2\". Thanks.\n\n" ; }
+txterr(){ printf "ERROR: this certificate could not be found in the keychain.\n\n" ; }
+txtmth(){ printf "\nPaste in the %s of the System Root Certificate you would like to delete.\nThe %s can be copied by secondary clicking on the certificate in Keychain\nAccess & selecting \"Get Info\":\n\n" "$method" "$method" ; }
+txtnot(){ printf "The certificate was not deleted.\n\n" ; }
+txtsip(){ printf "\nERROR: System Integrity Protection must be disabled to delete System Root\ncertificates. Restart the computer from the Recovery HD to disable SIP.\n" ; }
+txtusr(){ printf "\nERROR: this script must be executed by the root user or with sudo!\n" ; }
+txtyrn(){ printf "Please enter \"yes\" or \"no\". Thanks.\n\n" ; }
 
-
-
-# functions
 chkchk(){
     /usr/bin/clear
 
@@ -92,25 +92,23 @@ chkchk(){
     fi
 }
 
-
 delcrt(){
     txtdel
     while true
     do
-        read -r -p "delete> " yesno
+        read -r -p "delete> " yesno; echo
         case "$yesno" in
-            YES | Yes | yes ) /usr/bin/security delete-certificate -Z "$shastr" "$keychn" ; echo; echo "Certificate deleted!"; echo; exit ;;
-            NO  | No  | no  ) echo; echo "The certificate was not deleted."; echo; exit ;;
-                          * ) echo "Please enter \"yes\" or \"no\". Thanks."; echo ;;
+            YES | Yes | yes ) /usr/bin/security delete-certificate -Z "$shastr" "$keychn" ; txtack; exit ;;
+            NO  | No  | no  ) txtnot; exit ;;
+                          * ) txtyrn ;;
         esac
     done
 }
 
-
 delnam(){
     method="Common Name"
     
-    txtmth; read -r -p "Common Name> " input
+    txtmth; read -r -p "Common Name> " input; echo
     
     output="$(echo "$input" | /usr/bin/sed -e "s/'//g" -e 's/"//g')"
     shastr="$(/usr/bin/security find-certificate -c "$output" -Z "$keychn" | /usr/bin/awk '/SHA-1 hash:/{print $NF}')"
@@ -124,11 +122,10 @@ delnam(){
     dspnam="Common Name: $output"
 }
 
-
 delsha(){
     method="SHA-1 hash"
     
-    txtmth; read -r -p "SHA-1 hash> " input
+    txtmth; read -r -p "SHA-1 hash> " input; echo
     
     shastr="$(echo "$input" | /usr/bin/awk '{gsub (" ","",$0); print}')"
     
@@ -141,8 +138,7 @@ delsha(){
     fi
 }
 
-
-volmnt(){
+fixmnt(){
     if [ "$macosx" -gt 14 ] || [ "$macos11" = 11 ]
     then
         /sbin/mount -ur / 2>&1 /dev/null
@@ -162,7 +158,7 @@ do
         * ) txtent ;;
     esac
 done
-volmnt
+fixmnt
 ```
 
 The script will exit if SIP is enabled & it will exit if not executed with root privilege.

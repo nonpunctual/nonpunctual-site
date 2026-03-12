@@ -22,7 +22,7 @@
           {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
           {{ with .Params.people }}
           <div class="people">
-            <i class="fa-solid fa-users" aria-hidden="true"></i>
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
             {{- range $index, $person := . -}}
               {{- if gt $index 0 }}
                 <span class="separator">•</span>
