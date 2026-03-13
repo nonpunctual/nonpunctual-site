@@ -5,8 +5,12 @@
   <section class="container pictures">
     <header>
       <h1 class="title">
+        {{- $total := 0 -}}
+        {{- range .Sections -}}
+          {{- $total = add $total (len (.Resources.ByType "image")) -}}
+        {{- end -}}
         <a class="title-link" href="{{ .Permalink | safeURL }}">
-          pictures <span class="list-count">({{ len .Sections }})</span>
+          pictures <span class="list-count">({{ $total }})</span>
         </a>
       </h1>
     </header>

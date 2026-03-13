@@ -1,0 +1,61 @@
+[
+  {
+    "SourceFile": "path/to/image.jpg",
+
+    "DateTimeOriginal": "YYYY:MM:DD HH:MM:SS",
+    "CreateDate": "YYYY:MM:DD HH:MM:SS",
+    "ModifyDate": "YYYY:MM:DD HH:MM:SS",
+
+    "Title": "",
+    "ImageDescription": "",
+    "Caption-Abstract": "",
+
+    "Artist": "",
+    "By-line": "",
+    "Credit": "",
+    "Copyright": "",
+    "CopyrightNotice": "",
+    "UsageTerms": "",
+
+    "Make": "",
+    "Model": "",
+    "LensModel": "",
+    "LensMake": "",
+    "FocalLength": "",
+    "FocalLengthIn35mmFormat": "",
+    "ExposureTime": "",
+    "FNumber": "",
+    "ISO": "",
+    "ExposureProgram": "",
+    "ExposureCompensation": "",
+    "MeteringMode": "",
+    "Flash": "",
+    "WhiteBalance": "",
+    "ShootingMode": "",
+
+    "GPSLatitude": "",
+    "GPSLatitudeRef": "",
+    "GPSLongitude": "",
+    "GPSLongitudeRef": "",
+    "GPSAltitude": "",
+    "GPSAltitudeRef": "",
+
+    "City": "",
+    "State": "",
+    "Country": "",
+    "CountryCode": "",
+    "Location": "",
+    "Sub-location": "",
+
+    "Keywords": [],
+    "Subject": [],
+    "PersonInImage": [],
+    "Event": "",
+    "Rating": 0,
+
+    "Orientation": 1,
+    "ColorSpace": "",
+    "XResolution": "",
+    "YResolution": ""
+  }
+]

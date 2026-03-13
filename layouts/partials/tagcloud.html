@@ -1,7 +1,7 @@
 <div class="tagcloud">
   {{- if and ($.Site.Taxonomies.tags) (ne (len $.Site.Taxonomies.tags) 0) -}}
-    {{- $largestFontSize := 4.76 -}}
-    {{- $smallestFontSize := 1.785 -}}
+    {{- $largestFontSize := 5.0 -}}
+    {{- $smallestFontSize := 1.875 -}}
     {{- $max := add (len (index $.Site.Taxonomies.tags.ByCount 0).Pages) 1 -}}
     {{- $min := len (index $.Site.Taxonomies.tags.ByCount.Reverse 0).Pages -}}
     {{- range $name, $taxonomy := $.Site.Taxonomies.tags -}}
