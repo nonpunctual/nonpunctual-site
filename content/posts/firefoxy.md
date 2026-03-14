@@ -10,6 +10,8 @@ tags: ["curl", "firefox", "jamf nation", "json", "jxa", "osascript"]
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
+Jamf Nation post - https://community.jamf.com/t5/jamf-pro/firefoxy/m-p/266970
+
 {{< /notice >}}
 
 {{< notice note >}}

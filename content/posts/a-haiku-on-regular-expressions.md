@@ -10,6 +10,8 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
+Jamf Nation post - https://community.jamf.com/t5/jamf-pro/a-haiku-on-regular-expressions/td-p/293512
+
 {{< /notice >}}
 
 <br/>

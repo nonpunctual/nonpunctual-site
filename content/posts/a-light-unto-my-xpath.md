@@ -10,6 +10,8 @@ tags: ["curl", "jamf api", "jamf nation", "script", "xml", "xmllint", "xpath"]
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
+Jamf Nation post - https://community.jamf.com/general-discussions-2/a-light-unto-my-xpath-26316
+
 {{< /notice >}}
 
 {{< notice note >}}

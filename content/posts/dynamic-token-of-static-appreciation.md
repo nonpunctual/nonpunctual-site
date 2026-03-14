@@ -1,147 +1,166 @@
 ---
 title: "Dynamic Token Of Static Appreciation"
-date: 2023-12-21
-tags: ["jamf api","jamf nation","logging","script","zsh"]
+date: 2023-05-08
+tags: ["curl", "exchange", "jamf api", "jamf nation", "jamf pro", "script", "static group", "xml", "xmllint"]
 ---
 
 {{< notice info >}}
 
-These posts are being recreated from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the [Jamf Nation](https://www.jamf.com/community/jamf-nation/) transition to its most recent hosting platform.
+**NOTE:** These posts are being recreated from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the [Jamf Nation](https://www.jamf.com/community/jamf-nation/) transition to its most recent hosting platform.
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
+
+Jamf Nation post - https://community.jamf.com/t5/jamf-pro/dynamic-token-of-static-appreciation/m-p/290667
 
 {{< /notice >}}
 
 <br/>
 
 -----
+
 <br/>
 
-As it is the holiday season, I wanted to offer up a little gratitude in the form of boilerplate code related to topics that come up in the mac admins #scripting & #bash channels again & again. I hope people find it here & find it useful.
+It's been a while since I posted anything, so, for (future) me & for you I am posting this script that dynamically updates Static Group membership.
 
-1) Logging is always a hot topic. "How do I create a log for my script?" "Where should I write log output?" etc. Without saying this solution is definitive, the script below has a pattern that I have used over & over. In fact, I paste this block exactly into any script I create that needs logging. It uses `tee` along with `exec` & with a named pipe. Why? Well, I find this works in all situations to capture all foreground & background processes executed by the script & it creates a dedicated stream / file for the log output regardless of what the script is trying to do.
+You might be saying to yourself, "Dynamically updating a Static Group is impossibly dumb, because, that's what Smart Groups are for...", but, here is my dilemma:
 
-2) Jamf API. I said in an earlier post I had come up with the shortest, bestest version of making an API call with token auth. I was wrong. I made it shorter & betterer.
+*I need to assess an endpoint state for which there are no good client-side attributes to collect.*
 
-This script does not do anything remarkable - it removes Network Segments at their endpoint by name. This is also something that seems to come up repeatedly as the Jamf API docs could be a bit clearer on this subject. Using the object ID is straightforward but I think having a good example of using name as the identifier should be useful to some of you. Happy Whatever!
+- In this particular case (if you must know, Microsoft modern vs. basic authentication) there is no definitive data on the endpoint that accurately reflects the sheer number of highly-variable user login behaviors in my environment. 
 
-**PS.** The input should just be a single column `.csv` file of single quoted Network Segment names & you put the path to that file in the `network_data_csv` variable at the top of the script.
+- It's not that it's too hard, it just can't be accurately done (yes, I've talked to Microsoft... [Notes from the field: Does Outlook for Mac insist on using Basic Authentication?](https://techcommunity.microsoft.com/t5/exchange-team-blog/notes-from-the-field-does-outlook-for-mac-insist-on-using-basic/ba-p/3629510)).
 
-```zsh
-#!/bin/zsh
+- The user login data I need (i.e., email addresses that are using basic auth) is available, however, only in the Exchange logs. 
 
+Because our Messaging team can ship me that log data I can use it to create Static Groups. When that data is updated I can dynamically change the membership of my designated Static Group, thus, Dynamic Static Groups™
 
-# api.delete.network.segments @2023
-# author: brock_walters@blah.com
-# created: 2023-11-07
-# version: 9
+I think it's a pretty cool idea with lots of potential use cases. The best way to do this isn't necessarily with a bash script but with something like AWS Lambda or an orchestration tool like [Tines](https://www.tines.com/). 
 
-# NOTE: This script is currently set in "test mode". To execute actual deletions the line in the script below starting with:
-#
-# /usr/bin/curl -LSs -X DELETE ...
-#
-# must be uncommented.
+Here's my script anyways which also happens to include the boilerplate stuff I intend to use in the future for Jamf API token authentication (which was created using ideas from Bill Smith's fantastic Jamf blog post on the topic: [How to Convert Classic API Scripts to Use Bearer Token](https://community.jamf.com/t5/tech-thoughts/how-to-convert-classic-api-scripts-to-use-bearer-token/ba-p/273910)).
 
+Enjoy!
 
-# environment & data
-network_data_csv='/Users/Shared/building.subnet.data.csv'
-jamf_environment='https://server.blah.com:8443'
+```bash
+#!/bin/bash
 
-
-###########################
-### DO NOT MODIFY BELOW ###
-###########################
-
-
-# logging
-cpuname="$(/usr/sbin/scutil --get ComputerName)"
-srlnmbr="$(/usr/libexec/PlistBuddy -c 'print 0:serial-number' /dev/stdin <<< "$(/usr/sbin/ioreg -ar -d 1 -k 'IOPlatformSerialNumber')")"
-usrcrnt="$(/usr/bin/stat -f %Su /dev/console)"
-
-logexec="$(/usr/bin/basename "$0")"
-logpath="/private/tmp/${logexec%.*}.log"
-logpipe="/private/tmp/${logexec%.*}.pipe"
-
-/usr/bin/mkfifo "$logpipe"
-/usr/bin/tee -a < "$logpipe" "$logpath" &
-exec &> "$logpipe"
-printf "$(/bin/date "+%Y-%m-%dT%H:%M:%S") [START] logging %s\ncomputer name: %s\nserial number: %s\ncurrent user: %s\n" "$logexec" "$cpuname" "$srlnmbr" "$usrcrnt" >> "$logpath"
-logalrt(){ >&2 printf "$(/bin/date "+%Y-%m-%dT%H:%M:%S") [ALERT] %s\n" "$1" >> "$logpath" }
-loginfo(){ >&2 printf "$(/bin/date "+%Y-%m-%dT%H:%M:%S") [INFO] %s\n" "$1" >> "$logpath" }
-logexit(){ >&2 printf "$(/bin/date "+%Y-%m-%dT%H:%M:%S") [STOP] logging %s\n" "$logexec" >> "$logpath"; /bin/rm -rf "$logpipe"; /usr/bin/pkill -ail tee > /dev/null; exit }
-
-
-# jamf api
-jamfurl="$jamf_environment"
+# functions & strings & variables
+authcsv='/Users/Shared/basic.auth.csv'
+jamfurl='https://jss.blah.com:8443'
 jamfapi="$jamfurl/api/v1"
 jamfchk="$jamfurl/healthCheck.html"
 jamfrsc="$jamfurl/JSSResource"
+jamfstg="$jamfrsc/computergroups/id/1234"
 osaauth='Jamf Pro Authentication'
 osapswd='Please enter your Jamf API password:'
 osauser='Please enter your Jamf API username:'
-apiuser="$(/usr/bin/sudo -u "$usrcrnt" /usr/bin/osascript -e "display dialog \"$osauser\" default answer \"\" buttons {\"Ok\"} default button 1 with Title \"$osaauth\"" -e 'set theName to text returned of result')"
-apipswd="$(/usr/bin/sudo -u "$usrcrnt" /usr/bin/osascript -e "display dialog \"$osapswd\" default answer \"\" buttons {\"Ok\"} default button 1 with Title \"$osaauth\" with hidden answer" -e 'set thePswd to text returned of result')"
-b64auth="$(printf "%s" "$apiuser:$apipswd" | /usr/bin/iconv -t ISO-8859-1 | /usr/bin/base64)"
-tknauth="$(/usr/bin/plutil -extract 'token' raw - <<< "$(/usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Basic $b64auth" "$jamfapi/auth/token")")"; /bin/sleep 1.5
+usrcrnt="$(/usr/bin/stat -f %Su /dev/console)"
 
-api_chk(){ printf "\nChecking jamf api...\n" ; }
-api_no(){ printf "The jamf server may not be available. Please try again. Exiting...\n" ; }
-api_yes(){ printf "OK.\n" ; }
-auth_chk(){ printf "\nValidating jamf api credentials...\njamf url: %s\njamf api user: %s\n" "$jamfurl" "$apiuser" ; }
-auth_no(){ printf "Please ensure that your credentials are correct & try again. Exiting...\n\n" ; }
-delete_no(){ printf "%s Network Segment Not Found.\n\n" "$ntwkstr" ; }
-delete_yes(){ printf "Deleting:\n" ; }
-mtch_req(){ printf 'The server has not found anything matching the request.' ; }
-ntwk_csv(){ printf "\nReading Network Segment names from %s\n\n" "$network_data_csv" ; }
-ops_done(){ printf "Operations complete.\nInvalidating jamf api token...\n" ; }
-token_no(){ printf "jamf api token status: UNAUTHORIZED\n" ; }
-token_yes(){ printf "jamf api token status: OK\n" ; }
-tknchk(){
-  tknhttp="$(/usr/bin/curl -LSs -X GET -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfapi/auth" -o '/dev/null' -w "%{http_code}")"; /bin/sleep 1.5
-  case "$tknhttp" in
-    '200' ) token_yes ;;
-    '401' ) token_no ;;
-    * ) echo "$tknhttp" ;;
-  esac
+tknchck(){
+    tknhttp="$(/usr/bin/curl -LSs -X GET \
+        -H 'Accept: application/json' \
+        -H "Authorization: Bearer $tkninit" \
+        "$jamfapi/auth" -o '/dev/null' -w "%{http_code}")"
+    /bin/sleep 1
+    case "$tknhttp" in
+        '200' ) tknvldt='OK' ;;
+        '401' ) tknvldt='Unauthorized' ;;
+    esac
+    printf "Jamf API Token Status: %s\n" "$tknvldt"
 }
 
-api_chk
+printf "\nChecking Jamf availability & validating admin credentials...\n"
+
 if /usr/bin/curl -LSs "$jamfchk" --connect-timeout 60 | /usr/bin/grep -q '\[\]'
 then
-  api_yes
+    apiuser="$(/usr/bin/sudo -u "$usrcrnt" /usr/bin/osascript \
+        -e "display dialog \"$osauser\" default answer \"\" buttons {\"Ok\"} default button 1 with Title \"$osaauth\"" \
+        -e 'set theName to text returned of result')"
+    apipswd="$(/usr/bin/sudo -u "$usrcrnt" /usr/bin/osascript \
+        -e "display dialog \"$osapswd\" default answer \"\" buttons {\"Ok\"} default button 1 with Title \"$osaauth\" with hidden answer" \
+        -e 'set thePswd to text returned of result')"
+    b64auth="$(/bin/echo -n "$apiuser:$apipswd" | /usr/bin/base64)"
 else
-  api_no; logexit
+    printf 'The Jamf server may not be available. Please try again. Exiting...\n'; exit
 fi
 
-auth_chk; tknchk
-if [ "$tknhttp" != '200' ]
+printf "Obtaining Jamf API token...\n"
+tkninit="$(/usr/bin/plutil -extract 'token' raw - \
+    <<< "$(/usr/bin/curl -LSs -X POST \
+        -H 'Accept: application/json' \
+        -H "Authorization: Basic $b64auth" \
+        "$jamfapi/auth/token")")"
+/bin/sleep 1
+tknchck
+
+if [ "$tknvldt" != 'OK' ]
 then
-  logalrt; auth_no; logexit
+    printf 'Please ensure that your Jamf credentials are correct & try again. Exiting...\n'; exit
 fi
 
+printf "\nCollecting all computers for each email address...\n"
+IFS=$'\n'
+j=0
+emladdr=($(/usr/bin/sort "$authcsv" | /usr/bin/uniq | /usr/bin/sed 's/@/%40/g'))
 
-# operations
-IFS=$'\n'; arrdata=($(/bin/cat "$network_data_csv"))
-ntwk_csv
-for i in "${arrdata[@]}"
+for i in "${emladdr[@]}"
 do
-  ntwkstr="$(echo "$i" | /usr/bin/sed 's/,//g')"
-  ntwkurl="$(echo "$i" | /usr/bin/sed 's/ /%20/g;s/,//g')"
-  ntwkvar="$(/usr/bin/curl -LSs -X GET -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfrsc/networksegments/name/$ntwkurl"; /bin/sleep 1.5; echo)"
-  if echo "$ntwkvar" | /usr/bin/grep -q "\"name\":\"$ntwkstr\""
-  then
-    logalrt; delete_yes; echo "$ntwkvar" | /usr/bin/json_pp -t json
-    #/usr/bin/curl -LSs -X DELETE -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfrsc/networksegments/name/$ntwkurl"; /bin/sleep 1.5; echo >> "$logpath"
-    unset ntwkstr ntwkurl ntwkvar
-  elif echo "$ntwkvar" | /usr/bin/grep -q "$(mtch_req)"
-  then
-    loginfo; delete_no
-    unset ntwkstr ntwkurl ntwkvar; continue
-  else
-    logalrt 'Error.'; echo >> "$logpath"
-    unset ntwkstr ntwkurl ntwkvar; continue
-  fi
+    tnumarr+=($(/usr/bin/curl -LSs -X GET \
+        -H 'Accept: application/xml' \
+        -H "Authorization: Bearer $tkninit" \
+        "$jamfrsc/users/email/$i" \
+        | /usr/bin/xmllint --xpath "//computers/computer/name/text()" - 2> /dev/null))
+    /bin/sleep 0.5
+    if [ -z "${tnumarr[$j]}" ]
+    then
+        tnumerr+=($(echo "$i" | /usr/bin/sed 's/%40/@/g')); continue
+    fi
+    printf "$((j+1))) %s: \n%s\n" "$(echo "$i" | /usr/bin/sed 's/%40/@/g')" "${tnumarr[$j]}"
+    ((j++))
 done
-ops_done
-/usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfapi/auth/invalidate-token"; /bin/sleep 1.5; tknchk; echo; logexit
+
+for j in "${tnumarr[@]}"
+do
+    apidata+="$(/bin/echo -n "<computer><name>$j</name></computer>")"
+done
+
+printf "\nNo computers found for: %s\n\n" "${tnumerr[*]}"
+read -p '> Pausing to validate output above. Press RETURN to continue or CONTROL + C to cancel...'
+
+printf 'Deleting current Static Group members...\n'
+/usr/bin/curl -LSs -X PUT \
+    -H 'Content-type: application/xml' \
+    -H "Authorization: Bearer $tkninit" \
+    -d '<computer_group><computers></computers></computer_group>' \
+    "$jamfstg"
+/bin/sleep 2; echo
+
+printf 'Verifying deletions...\n'
+/usr/bin/curl -LSs -X GET \
+    -H 'Accept: application/xml' \
+    -H "Authorization: Bearer $tkninit" \
+    "$jamfstg" | /usr/bin/xmllint -format -
+/bin/sleep 2; echo
+
+printf 'Updating Static Group membership...\n'
+/usr/bin/curl -LSs -X PUT \
+    -H 'Content-type: application/xml' \
+    -H "Authorization: Bearer $tkninit" \
+    -d "<computer_group><computers>$apidata</computers></computer_group>" \
+    "$jamfstg"
+/bin/sleep 2; echo
+
+printf 'Verifying additions...\n'
+/usr/bin/curl -LSs -X GET \
+    -H 'Accept: application/xml' \
+    -H "Authorization: Bearer $tkninit" \
+    "$jamfstg" | /usr/bin/xmllint -format -
+/bin/sleep 2; echo
+
+printf "Operations complete. Invalidating Jamf API token...\n"
+/usr/bin/curl -LSs -X POST \
+    -H 'Accept: application/json' \
+    -H "Authorization: Bearer $tkninit" \
+    "$jamfapi/auth/invalidate-token"
+/bin/sleep 1
+tknchck
 ```

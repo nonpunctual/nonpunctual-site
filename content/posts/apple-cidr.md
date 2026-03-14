@@ -10,6 +10,8 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
+Jamf Nation post - https://community.jamf.com/t5/jamf-pro/apple-cidr/td-p/297600
+
 {{< /notice >}}
 
 <br/>
@@ -23,7 +25,7 @@ It's been a while so here is something that you may never need, or, you have som
 
 1) I have arrived at what I feel is the bare minimum "boilerplate" code for a shell script intended to do something with a Jamf API token so, that's 1st. 
 
-~~It's as short as I can make it,~~ it has error checking, it does not store a password in the script (it's interactive) & it has a function that can be called at any point to ensure the key is valid or invalid. Feel free to copy, it's been working well for me.
+[~~It's as short as I can make it,~~](/posts/yule-logging) it has error checking, it does not store a password in the script (it's interactive) & it has a function that can be called at any point to ensure the key is valid or invalid. Feel free to copy, it's been working well for me.
 
 2) Remember that time you wanted to input new Network Segments & your fancy network guy gave you a single column of CIDR ranges? This converts them to integer IPv4 ranges with bitwise arithmetic.
 
