@@ -1,7 +1,7 @@
 ---
 title: "Migration \"Assistant\""
 date: 2024-05-15
-tags: ["launchd", "macos", "script", "software"]
+tags: ["druva", "launchd", "macos", "script", "software"]
 ---
 
 {{< notice info >}}

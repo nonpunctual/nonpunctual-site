@@ -1,7 +1,7 @@
 ---
 title: "Thinking About Extension Attributes"
 date: 2016-09-25
-tags: ["dscl", "extension attribute", "script", "security"]
+tags: ["user account", "dscl", "extension attribute", "script", "security", "uid"]
 ---
 
 {{< notice info >}}

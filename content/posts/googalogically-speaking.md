@@ -1,7 +1,7 @@
 ---
 title: "Googalogically Speaking"
 date: 2022-03-04
-tags: ["curl", "script", "software", "sort"]
+tags: ["curl", "macos", "script", "software", "sort"]
 ---
 
 {{< notice info >}}

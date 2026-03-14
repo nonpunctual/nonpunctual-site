@@ -225,22 +225,30 @@ IFS=$'\n'
 
 if objcfnc "$domenvr" 'Users' "$input" 'user'
 then
+
     objclss='USER'
-    if [ "$input" = "$crntusr" ]
-    then
-        arrkeys=("${arrlocl[@]}"); jsonfnc "$(dsclfnc "$domlocl" 'Users' "$input")"; unset arrkeys
-    fi
+
+        if [ "$input" = "$crntusr" ]
+        then 
+            arrkeys=("${arrlocl[@]}"); jsonfnc "$(dsclfnc "$domlocl" 'Users' "$input")"; unset arrkeys
+        fi
+
     arrkeys=("${arruser[@]}"); jsonfnc "$(dsclfnc "$domenvr" 'Users' "$input")"
+
 elif objcfnc "$domenvr" 'Computers' "${input}$" 'computer'
 then
+    
     objclss='COMPUTER'
     tstinpt="$(echo "${input}$" | /usr/bin/tr '[:upper:]' '[:lower:]')"
     tstsyst="$(echo "$crntsys" | /usr/bin/tr '[:upper:]' '[:lower:]')"
-    if [ "$tstinpt" = "$tstsyst" ]
-    then
-        arrkeys=("${arrlocl[@]}"); jsonfnc "$(dsclfnc "$domlocl" 'Users' "$crntusr")"; unset arrkeys
-    fi
+
+        if [ "$tstinpt" = "$tstsyst" ]
+        then 
+            arrkeys=("${arrlocl[@]}"); jsonfnc "$(dsclfnc "$domlocl" 'Users' "$crntusr")"; unset arrkeys
+        fi
+
     arrkeys=("${arrsyst[@]}"); jsonfnc "$(dsclfnc "$domenvr" 'Computers' "${input}$")"
+
 elif echo "$input" | /usr/bin/grep -Eq '[[:digit:]]'
 then
     echo; timefnc "$input"; echo; exit
