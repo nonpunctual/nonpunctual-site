@@ -5,7 +5,7 @@ tags: ["jamf api","jamf nation","script"]
 ---
 
 {{< notice info >}}                                                                                                                                                   
-These posts are being recreated from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the [Jamf Nation](https://www.jamf.com/community/jamf-nation/) transition to its most recent hosting platform. 
+These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the [Jamf Nation](https://www.jamf.com/community/jamf-nation/) transition to its most recent hosting platform. 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
