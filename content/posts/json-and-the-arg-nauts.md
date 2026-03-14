@@ -32,11 +32,7 @@ Why?
 - It's extremely useful given how many macOS binaries & logs output JSON-ish data
 - There are ways of working around this limitation.
 
-Arg-nauts is an unforgivable pun, however, there are some real explorers in this area. I rounded some of them up here:
-
-https://community.jamf.com/t5/jamf-nation/firefoxy/td-p/266970
-
-I will try to be a bit more exhaustive this time...
+"Arg-nauts" is an unforgivable pun, however, there are some real explorers in this area. I will try to be a bit more exhaustive this time:
 
 - From the crafty Joel Brunner (you may know him as @brunerd...)
 
@@ -45,15 +41,17 @@ I will try to be a bit more exhaustive this time...
 
   I have used `ljt` in production. It's lightweight & works great. Once you're on Joel's blog, check out ALL of his `json` related posts!
 
-- The post below inspired much ado in the Mac Admins Slack channels regarding parsing `json` data:
+- This post inspired much ado in the Mac Admins Slack channels regarding parsing `json` data:
 
   https://paulgalow.com/how-to-work-with-json-api-data-in-macos-shell-scripts/
+
+  - See: https://community.jamf.com/t5/jamf-nation/firefoxy/td-p/266970
 
 - Resultant was the `JSON-Shell-Tools-for-macOS` created by the ever-grinding @pico on the Mac Admins Slack channels:
 
   https://github.com/RandomApplications/JSON-Shell-Tools-for-macOS/tree/main
 
-- A somewhat recent update to the `sqlite3` binary included `json` parsing within tables, but, it can also just be called to process data on the command line:
+- A somewhat recent update to the `sqlite3` binary included `json` parsing within tables, but, `sqlite3` can also be called to process `json` on the command line:
 
   https://sqlite.org/json1.html
 
@@ -65,20 +63,22 @@ The fact that AppleScript / `osascript` supports JavaScript is nice, but, in the
 
 Finally, this meager contribution...
 
-In a modern environment you should not have to bind your Macs to AD. But, maybe your 802.1x authentication depends on it, or, something else does & you're stuck with it. One benefit of this is: you get to use `dscl` to access data directly from your domain.
+In a modern environment you should not have to bind your Macs to AD. But, maybe your 802.1x authentication depends on it, or, something else does & you're stuck with it. One benefit of this is that you can use `dscl` to access data directly from your domain.
 
 In one of my environments AD lockouts were used as a security measure against malicious login attempts. So, it's good to have a way to know if a user's AD account is locked out independently of "Hello, IT? None of my logins work."
 
 This script does some weird things:
 
-- It collects dscl data from AD as a plist
-- Because of this the data can be CONVERTED to `json`
-- This is done by stripping off the `dscl` keys & parsing it through `plutil` (which is [definitely not my invention](https://scriptingosx.com/2018/07/parsing-dscl-output-in-scripts/))
-- The script also converts the date / time formats AD uses (3 different formats!) to ultra-human-readable dates about which there are no questions
+- It collects `dscl` data from AD as a `.plist`
+- Because of this, the data can be CONVERTED to `json`
+  - This is done by stripping off the `dscl` keys & parsing it through `plutil`
+  - Definitely [not my invention](https://scriptingosx.com/2018/07/parsing-dscl-output-in-scripts/)
+- It converts the date / time formats AD uses (3 different formats!) to "ultra-human-readable dates"
+  - i.e., dates about which there can be no questions
+- It can be run interactively on someone's computer or automatically
+  - This makes the AD attributes collected useful as Jamf extension attributes or management data (i.e., not just for resolving AD lockouts.) 
 
-The script can be run interactively on someone's computer or automatically to make any of the AD attributes collected useful as Jamf extension attributes / management data (i.e., not just for resolving AD lockouts.) 
-
-But, I am definitely not saying you should bind to AD to do this. More, it's a benefit of binding that you get this data from `dscl` & here are some ideas about how to get it.
+I am definitely ***not*** saying you should bind to AD to do this. I am saying, it's a benefit of binding that you get this data from `dscl` & here are some ideas about how to collect it.
 
 Enjoy!
 
