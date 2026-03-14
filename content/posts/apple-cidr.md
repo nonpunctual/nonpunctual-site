@@ -1,7 +1,7 @@
 ---
 title: "Apple CIDR"
 date: 2023-08-21
-tags: ["bash","cidr","ipv4","jamf api","jamf nation","script"]
+tags: ["bitwise", "cidr", "jamf api", "network segments"]
 ---
 
 {{< notice info >}}

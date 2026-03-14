@@ -1,7 +1,7 @@
 ---
 title: "Migration \"Assistant\""
 date: 2024-05-15
-tags: ["jamf nation","script"]
+tags: ["launchd", "macos", "script", "software"]
 ---
 
 {{< notice info >}}

@@ -1,7 +1,7 @@
 ---
 title: "Remember that time you wanted all of your Self Service display names to actually match your policy names?"
 date: 2019-07-24
-tags: ["jamf api","jamf nation","script"]
+tags: ["jamf api", "script", "self service"]
 ---
 
 {{< notice info >}}                                                                                                                                                   

@@ -1,7 +1,7 @@
 ---
 title: "Super Size Me"
 date: 2022-06-23
-tags: ["csv", "druva", "du", "extension attribute", "jamf api", "jamf nation", "jamf pro", "jq", "script", "zsh"]
+tags: ["csv", "druva", "du", "extension attribute", "jamf api", "jq", "script"]
 ---
 
 {{< notice info >}}

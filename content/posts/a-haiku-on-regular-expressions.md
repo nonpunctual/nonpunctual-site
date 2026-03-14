@@ -1,7 +1,7 @@
 ---
 title: "A Haiku On Regular Expressions"
 date: 2023-06-18
-tags: ["jamf nation","regex","script","zsh"]
+tags: ["mdfind", "script", "zsh"]
 ---
 
 {{< notice info >}}

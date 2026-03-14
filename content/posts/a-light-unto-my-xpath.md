@@ -1,7 +1,7 @@
 ---
 title: "A Light Unto My Xpath"
 date: 2021-12-22
-tags: ["curl", "jamf api", "jamf nation", "script", "xml", "xmllint", "xpath"]
+tags: ["concat", "jamf api", "xml", "xmllint", "xpath"]
 ---
 
 {{< notice info >}}

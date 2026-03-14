@@ -1,7 +1,7 @@
 ---
 title: "Thinking About Extension Attributes"
 date: 2016-09-25
-tags: ["bash", "dscl", "extension attributes", "jamf nation", "jamf pro", "script"]
+tags: ["dscl", "extension attribute", "script", "security"]
 ---
 
 {{< notice info >}}

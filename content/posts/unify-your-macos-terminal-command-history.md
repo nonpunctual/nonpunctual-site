@@ -1,7 +1,7 @@
 ---
 title: "Unify Your macOS Terminal Command History"
 date: 2020-05-18
-tags: ["bash","jamf nation","macos","terminal","zsh"]
+tags: ["macos", "terminal", "zsh"]
 ---
 
 {{< notice info >}}

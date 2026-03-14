@@ -1,7 +1,7 @@
 ---
 title: "JSON & the Arg-nauts"
 date: 2024-01-05
-tags: ["ad","date","dscl","jamf nation","json","script"]
+tags: ["ad", "date", "dscl", "extension attribute", "jq", "json", "script"]
 ---
 
 {{< notice info >}}

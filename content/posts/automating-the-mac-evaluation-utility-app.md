@@ -1,7 +1,7 @@
 ---
 title: "Automating the \"Mac Evaluation Utility\" App"
 date: 2021-11-12
-tags: ["applescript","jamf nation","macos","script"]
+tags: ["applescript", "automation", "macos", "osascript", "script"]
 ---
 
 {{< notice info >}}

@@ -1,7 +1,7 @@
 ---
 title: "I've Got the Power"
 date: 2022-03-15
-tags: ["apple silicon", "extension attribute", "intel", "jamf nation", "jamf pro", "macos", "plistbuddy", "script"]
+tags: ["extension attribute", "macos", "plistbuddy", "script", "system_profiler"]
 ---
 
 {{< notice info >}}

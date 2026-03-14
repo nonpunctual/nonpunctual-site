@@ -1,7 +1,7 @@
 ---
 title: "Removing System Root certificates (is probably a bad idea)"
 date: 2020-09-17
-tags: ["jamf nation","macos","script","security","sip"]
+tags: ["certificates", "keychain", "macos", "script", "security", "sip"]
 ---
 
 {{< notice info >}}

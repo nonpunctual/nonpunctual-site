@@ -1,7 +1,7 @@
 ---
 title: "Dynamic Token Of Static Appreciation"
 date: 2023-05-08
-tags: ["curl", "exchange", "jamf api", "jamf nation", "jamf pro", "script", "static group", "xml", "xmllint"]
+tags: ["csv", "jamf api", "script", "static groups", "xml", "xmllint"]
 ---
 
 {{< notice info >}}

@@ -1,7 +1,7 @@
 ---
 title: "Surfin' Safari"
 date: 2022-06-03
-tags: ["defaults", "jamf nation", "macos", "plist", "plistbuddy", "safari"]
+tags: ["defaults", "macos", "plistbuddy", "safari"]
 ---
 
 {{< notice info >}}

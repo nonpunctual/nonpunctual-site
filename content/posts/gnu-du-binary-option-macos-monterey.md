@@ -1,7 +1,7 @@
 ---
 title: "GNU (New?) du Binary Option In macOS 12 Monterey"
 date: 2021-11-20
-tags: ["du","jamf nation","macos"]
+tags: ["du", "macos"]
 ---
 
 {{< notice info >}}

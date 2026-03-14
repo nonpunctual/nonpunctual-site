@@ -1,7 +1,7 @@
 ---
 title: "The date command is pretty hard to use..."
 date: 2020-09-02
-tags: ["date","jamf nation","macos"]
+tags: ["bash", "date", "strftime"]
 ---
 
 {{< notice info >}}

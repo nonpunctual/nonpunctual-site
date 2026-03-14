@@ -1,7 +1,7 @@
 ---
 title: "Yule Logging"
 date: 2023-12-21
-tags: ["jamf api","jamf nation","logging","script","zsh"]
+tags: ["authentication", "jamf api", "logging", "script", "zsh"]
 ---
 
 {{< notice info >}}

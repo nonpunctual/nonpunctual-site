@@ -1,7 +1,7 @@
 ---
 title: "Firefoxy"
 date: 2022-05-30
-tags: ["curl", "firefox", "jamf nation", "json", "jxa", "osascript"]
+tags: ["firefox", "json", "jxa", "osascript"]
 ---
 
 {{< notice info >}}
@@ -73,11 +73,11 @@ https://paulgalow.com/how-to-work-with-json-api-data-in-macos-shell-scripts
 
 https://www.macblog.org/parse-json-command-line-mac/
 
-with assistance from @pico in the macadmins Slack #scripting & #bash channels.
+with assistance from @pico in the Mac admins Slack #scripting & #bash channels.
 
 My absolute favorite thing in the Firefox update data, however, is `NEXT_RELEASE_DATE` !!!!
 
-```
+```sh
 % key='NEXT_RELEASE_DATE'
 % jsonval "$data" "$key"
 2022-05-31

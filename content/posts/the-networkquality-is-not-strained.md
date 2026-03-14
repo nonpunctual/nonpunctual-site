@@ -1,7 +1,7 @@
 ---
 title: "The networkQuality Is Not Strained"
 date: 2021-12-15
-tags: ["jamf nation","networkQuality","script","zsh"]
+tags: ["macos", "networkquality", "osascript", "script", "self service"]
 ---
 
 {{< notice info >}}
