@@ -187,7 +187,7 @@ Having the UIDs will let you take further action if need be to get rid of bob's 
 
 I hope this is helpful. Feel free to nitpick my solution to death or ask questions! Thanks!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/thinking-about-extension-attributes-13270</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/thinking-about-extension-attributes-13270</small>
 
 -----
 

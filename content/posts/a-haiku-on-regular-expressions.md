@@ -128,4 +128,4 @@ Most of the ideas in this script come from Tom Larkin's excellent blog post on u
 
 Enjoy!
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/a-haiku-on-regular-expressions/td-p/293512</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/a-haiku-on-regular-expressions/td-p/293512</small>

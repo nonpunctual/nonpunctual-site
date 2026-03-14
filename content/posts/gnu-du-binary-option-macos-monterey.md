@@ -52,4 +52,4 @@ Which, let's face it, is gross. The `--si` option makes all of that unnecessary 
 32G    /Users/Brock.Walters
 ```
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/gnu-new-du-binary-option-in-macos-12-monterey-26025</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/gnu-new-du-binary-option-in-macos-12-monterey-26025</small>

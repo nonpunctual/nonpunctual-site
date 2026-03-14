@@ -150,4 +150,4 @@ So, the script will proceed to the 3rd section where install stuff happens:
 
 You may not like the code style I use. You may not like that I use `awk` & `sed`. My hope, though, is that this post transcends all that & helps those of you whose questions about doing this kind of thing are something like "how do I do this kind of thing?"
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/googalogically-speaking/m-p/260439</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/googalogically-speaking/m-p/260439</small>

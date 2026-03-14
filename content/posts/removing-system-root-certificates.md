@@ -207,4 +207,4 @@ As a final emergency offramp you actually have to type in the word "yes" or "no"
 
 As always I hope you find this informative, or, useful, or both, or dangerous & something you should never do. Enjoy! Be Careful!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/removing-system-root-certificates-is-probably-a-bad-idea-23732</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/removing-system-root-certificates-is-probably-a-bad-idea-23732</small>

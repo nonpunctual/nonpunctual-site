@@ -109,4 +109,4 @@ fi
 >&2 /bin/echo "exiting..."
 ```
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/automating-the-mac-evaluation-utility-app-25934</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/automating-the-mac-evaluation-utility-app-25934</small>

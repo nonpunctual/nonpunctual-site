@@ -95,7 +95,7 @@ echo "<result>${result:-no}</result>"
 
 Feel free to share why having the year seems unnecessary to you, what else you may be using to do this already, or just let me know how bad & silly you think it is. If it's useful to you, enjoy!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/collect-year-from-mac-marketing-model-name-25812</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/collect-year-from-mac-marketing-model-name-25812</small>
 
 -----
 

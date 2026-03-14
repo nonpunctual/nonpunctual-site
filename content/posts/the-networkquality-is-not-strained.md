@@ -74,4 +74,4 @@ done
 
 ![image2](/images/image2.webp)
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/the-networkquality-is-not-strained/m-p/254301</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/the-networkquality-is-not-strained/m-p/254301</small>

@@ -68,4 +68,4 @@ open /System/Applications/Safari.app
 
 Enjoy!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/surfin-safari-33364</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/surfin-safari-33364</small>

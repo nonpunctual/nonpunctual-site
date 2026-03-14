@@ -65,4 +65,4 @@ to your `.zprofile` on macOS Big Sur & later to prevent the sessions folder from
 
 See the post at this superuser.com link: [Disable zsh session folder completely](https://superuser.com/questions/1610587/disable-zsh-session-folder-completely) for the full discussion!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/unify-your-macos-terminal-command-history-21637</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/unify-your-macos-terminal-command-history-21637</small>

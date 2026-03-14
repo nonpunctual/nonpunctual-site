@@ -261,4 +261,4 @@ else
 fi
 ```
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/json-the-arg-nauts-31917</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/json-the-arg-nauts-31917</small>

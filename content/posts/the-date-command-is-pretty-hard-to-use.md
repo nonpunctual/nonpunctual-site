@@ -83,4 +83,4 @@ As always, I hope some of you find this useful.
 
 > "Great and very tidy solution indeed! Although usually 'eval is evil', this one seems pretty much unexploitable. I've always avoided running plain `date` multiple times by using epoch as a source format for later conversion, i.e.: `EPOCH=$(date +%s); date -jf "%s" ${EPOCH} "+%T"` — This however doesn't solve the `strftime` 'pain' problem, so kudos."
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571</small>

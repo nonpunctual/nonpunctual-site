@@ -120,4 +120,4 @@ Sample of `.csv` output:
 
 Enjoy!
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/super-size-me-27797</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/super-size-me-27797</small>

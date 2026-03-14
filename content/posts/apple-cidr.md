@@ -155,4 +155,4 @@ done
 /usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Bearer $tkninit" "$jamfapi/auth/invalidate-token"; /bin/sleep 1.5; echo; tknchck
 ```
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/apple-cidr/td-p/297600</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/apple-cidr/td-p/297600</small>

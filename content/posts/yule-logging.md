@@ -159,4 +159,4 @@ ops_done
 /usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfapi/auth/invalidate-token"; /bin/sleep 1.5; tknchk; echo; logexit
 ```
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/yule-logging/td-p/307056</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/yule-logging/td-p/307056</small>

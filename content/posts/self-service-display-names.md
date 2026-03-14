@@ -64,4 +64,4 @@ do
 done
 ```
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/remember-that-time-you-wanted-all-of-your-self-service-display-names-to-actually-match-your-policy-names-14733</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/remember-that-time-you-wanted-all-of-your-self-service-display-names-to-actually-match-your-policy-names-14733</small>

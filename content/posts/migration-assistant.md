@@ -111,4 +111,4 @@ EOF
 /bin/launchctl bootstrap system "$plstpth"
 ```
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/migration-assistant-32668</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/migration-assistant-32668</small>

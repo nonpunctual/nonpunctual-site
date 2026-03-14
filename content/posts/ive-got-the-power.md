@@ -101,4 +101,4 @@ Fleet (which uses OSQuery) was not reporting this correctly. 🙂 I believe they
 
 I am reporting this in Feedback Assistant — I don't understand why Apple stopped reporting battery manufacturer...
 
-</br><small>Source: https://community.jamf.com/general-discussions-2/i-ve-got-the-power-27003</small>
+<br/><small>Source: https://community.jamf.com/general-discussions-2/i-ve-got-the-power-27003</small>

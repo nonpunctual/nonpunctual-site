@@ -87,4 +87,4 @@ My absolute favorite thing in the Firefox update data, however, is `NEXT_RELEASE
 
 If only all software publishers were so organized & conscientious...
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/firefoxy/m-p/266970</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/firefoxy/m-p/266970</small>

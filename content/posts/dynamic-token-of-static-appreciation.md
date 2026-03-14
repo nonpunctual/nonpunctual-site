@@ -163,4 +163,4 @@ printf "Operations complete. Invalidating Jamf API token...\n"
 tknchck
 ```
 
-</br><small>Source: https://community.jamf.com/t5/jamf-pro/dynamic-token-of-static-appreciation/m-p/290667</small>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/dynamic-token-of-static-appreciation/m-p/290667</small>
