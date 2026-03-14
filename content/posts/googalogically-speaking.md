@@ -16,8 +16,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 -----
 
-<br/>
-
 **tl;dr:** This script is dumb. Do not read this.
 
 **Long version:** I have seen lots of "curl the package then install the package" scripts. Some are ghastly, some are complicated (ahem, `_APS`...)
@@ -106,9 +104,13 @@ The 1st 2 sections of the script handle cases 1 & 2.
 
 Why use `sort`? 
 
-Because the `test` commands (i.e., the brackets) are comparing version *strings*, not evaluating *integers* (e.g., "greater than" or "less than"). The Google Chrome version is in [semver](https://semver.org/) format (e.g., `104.5103.64`).
+The Google Chrome version is in [semver](https://semver.org/) format (e.g., `104.5103.64`). 
 
-The version strings could be broken into integers at the field separator (the "dot"), but, that's more variables & lines... `sort -r --version-sort` does the work of reading semver version strings & making mathematical comparisons for you.
+To the shell, this is a string. This means the `test` commands (i.e., the brackets) are *comparing strings*, not *evaluating integers* ("greater than" or "less than"). 
+
+The version strings could be broken into integers at the field separator (the "dot"), or you could do your own `regex` nonsense ([which you should not do](/posts/a-haiku-on-regular-expressions)) but that would mean more variables & lines... 
+
+`sort -r --version-sort` does the work of handling semver versions as integers & making mathematical comparisons for you.
 
 Using `-r` (reverse) means the newest version number of the 2 will be sorted to the top of the list. We can use this fact, but, this is also where the logic gets a bit tricky...
 
@@ -128,7 +130,7 @@ The case 2 exit condition: if the installed Google Chrome version is ***newer***
 
 {{< figure src="/images/chrome3.webp" >}}
 
-</br>
+<br/>
 
 {{< figure src="/images/chrome2.webp" caption="This is the output of stepping through the script using set -x..." >}}
 

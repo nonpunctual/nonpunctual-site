@@ -15,7 +15,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 It's been a while so here is something that you may never need, or, you have something clever that you already use for this & I am too dumb to know about it, or, maybe, someone will find it useful.
 

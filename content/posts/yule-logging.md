@@ -15,7 +15,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 As it is the holiday season, I wanted to offer up a little gratitude in the form of boilerplate code 🎁 related to topics that come up in the mac admins #scripting & #bash channels again & again. I hope people find it here & find it useful.
 

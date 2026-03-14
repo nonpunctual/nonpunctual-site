@@ -16,8 +16,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 -----
 
-<br/>
-
 I've seen a few tricks for getting what Apple calls the Marketing Model name of a Mac in Terminal. 
 
 One uses the last 4 characters of the serial number in a `curl` command. This seems to work (it requires the `-l` flag on `curl`) but it may stop working because of changes to Apple serial numbers. However, there is no need to use `curl` to get this information...
@@ -223,12 +221,12 @@ November 5, 2023
 
 Hello? I am an M1 Mac Mini user living in South Korea. Thank you for your kindness and knowledge and effort. Can I ask you a question? Recently, after updating my Macos to Ventura, I noticed that in the "about this Mac" tab, the submodel names like "M1, 2020" in faint gray under the Mac product name had disappeared. Apparently, it was only in March of this year that I discovered that vague submodel name. But it's not coming out now. So I updated to Sonoma, and it was the same there too. I did a clean install of monterey, bigsur, and ventura, but none of them show the submodel name. My Mac is an M1, 2020 model, and is not a cto model. There were no hardware changes of any kind. After contacting Apple, they recommended safe mode, OS reinstallation, and nvram deletion, but all failed. What should I do? Your expert opinion is desperately needed. I would really appreciate your reply. Thank you for reading, and I look forward to your reply.
 
-</br>
+<br/>
 <div style="display:flex; gap:1rem;">
     <img src="/images/nam1.png">
     <img src="/images/nam2.png">
 </div>
-</br>
+<br/>
 
 -----
 
@@ -345,9 +343,6 @@ fi
 
 GetAppleMarketingName
 ```
-
-
-
 
 
 

@@ -12,15 +12,13 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 {{< /notice >}}
 
-</br>
+<br/>
 
 -----
 
-</br>
+<br/>
 
 {{< figure src="/images/surfin-safari-cover.jpg" alt="" >}}
-
-</br>
 
 It is an objective fact that the Beach Boys are one of the 5 most overrated bands of all time, however, that discussion will have to wait for another time & place...
 
@@ -31,12 +29,12 @@ To wit: a thing for customizing the toolbar in Safari. I am not going to make a 
 ```sh
 crntusr=$(stat -f %Su /dev/console)
 ```
-<div style="margin-left: 6rem;">- Current user (however you get that...) because Safari preferences are in the user domain.</div></br>
+<div style="margin-left: 6rem;">- Current user (however you get that...) because Safari preferences are in the user domain.</div><br/>
 
 ```sh
 sudo -u "$crntusr" defaults read /System/Volumes/Data/Users/"$crntusr"/Library/Containers/com.apple.Safari/Data/Library/Preferences com.apple.Safari.plist 'NSToolbar Configuration BrowserStandaloneTabBarToolbarIdentifier'
 ```
-<div style="margin-left: 6rem;">- Read the .plist with defaults (you can also read it with PlistBuddy).</div></br>
+<div style="margin-left: 6rem;">- Read the .plist with defaults (you can also read it with PlistBuddy).</div><br/>
 
 ```sh
 sudo pkill -ail Safari
@@ -50,21 +48,21 @@ sudo -u "$crntusr" /usr/libexec/PlistBuddy -c "add 'NSToolbar Configuration Brow
 - An index is chosen for where the button should be positioned relative to what is already on the toolbar
 - The index order is from left to right
 
-<div style="margin-left: 6rem;">- Make sure Safari is not running when this change is made.</div></br>
+<div style="margin-left: 6rem;">- Make sure Safari is not running when this change is made.</div><br/>
 
 
 ```sh
 open /System/Applications/Safari.app
 ```
-<div style="margin-left: 6rem;">- Open Safari & marvel at how computers work...</div></br></br>
+<div style="margin-left: 6rem;">- Open Safari & marvel at how computers work...</div><br/><br/>
 
 {{< figure src="/images/safari1.webp" caption="Before" >}}
 
-</br>
+<br/>
 
 {{< figure src="/images/safari2.webp" caption="After" >}}
 
-</br>
+<br/>
 
 Enjoy!
 

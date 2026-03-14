@@ -15,7 +15,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 This is a (pretty dumb) script that will automate the execution of the "Mac Evaluation Utility" v. 4.0.1
 

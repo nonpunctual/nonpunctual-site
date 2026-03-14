@@ -24,7 +24,7 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 >```
 >
 >returns a new line separated list of all the ids.
->
+
 -----
 
 **Reply:**
@@ -87,8 +87,6 @@ Thanks!
 <br/>
 
 -----
-
-<br/>
 
 `xpath` is not super intuitive. Maybe I can clear up 1 tiny little thing here...
 

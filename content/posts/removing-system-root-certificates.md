@@ -21,7 +21,6 @@ I haven't tested this recently. I am pretty sure you can't do it. I guess you ca
 <br/>
 
 -----
-<br/>
 
 There may come a time when you need to delete a System Root certificate. This is not something you should do lightly, but, maybe a cert was installed by an update that you know is bad. Maybe a cert is expired. This isn't a huge deal, but, there's no reason for it to be there.
 
@@ -33,11 +32,11 @@ Most objects in a keychain can be deleted in Keychain Access. That doesn't mean 
 
 System Roots are special. Several years ago Apple blocked the ability to delete System Root certificates in Keychain Access. You can select them, you can view details, but, even with SIP disabled, selecting & hitting the delete key.
 
-</br>
+<br/>
 
 ![sysrootpic1](/images/sysrootpic1.webp)
 
-</br>
+<br/>
 
 This simply yields your favorite alert tone. (I have always been a "Morse" guy...)
 
@@ -165,45 +164,45 @@ The script will exit if SIP is enabled & it will exit if not executed with root 
 
 It guides you through entering the Common Name or SHA-1 hash of the cert you would like to delete. Either identifier works. Where do you get this identifying information? Good question! One way is by secondary clicking on the System Root cert & selecting "Get Info" from the contextual menu.
 
-</br>
+<br/>
 
 ![sysrootpic2](/images/sysrootpic2.webp)
 
-</br>
+<br/>
 
 Copy either the Common Name:
 
-</br>
+<br/>
 
 ![sysrootpic3](/images/sysrootpic3.webp)
 
-</br>
+<br/>
 
 or the SHA-1 (the hash can be found by scrolling all the way to the bottom of the Details window.)
 
-</br>
+<br/>
 
 ![sysrootpic7](/images/sysrootpic7.webp) 
 
-</br>
+<br/>
 
 Paste the data you've copied into the script at the prompt. If you use the name, the script output will display the hash. If you use the hash, the script generates the name for verification. The script will error out if the SHA or name you've entered can't be found:
 
-</br>
+<br/>
 
 ![sysrootpic4](/images/sysrootpic4.webp)
 
 ![sysrootpic5](/images/sysrootpic5.webp)
 
-</br>
+<br/>
 
 As a final emergency offramp you actually have to type in the word "yes" or "no" to act. I can hold your hand. I can't do it for you. 🙂
 
-</br>
+<br/>
 
 ![sysrootpic6](/images/sysrootpic6.webp)
 
-</br>
+<br/>
 
 As always I hope you find this informative, or, useful, or both, or dangerous & something you should never do. Enjoy! Be Careful!
 

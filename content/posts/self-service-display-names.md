@@ -23,11 +23,9 @@ The Jamf Pro API basic authentication method used in this script is deprecated. 
 
 {{< /notice >}} 
 
-</br>
+<br/>
 
 -----
-
-</br>
 
 You may never want this because your policy names match some convention, or your Self Service display names do, or, whatever. This is just a good find & replace technique for labels in Jamf that can be used pretty much anywhere.
 

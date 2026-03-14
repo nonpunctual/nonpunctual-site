@@ -16,8 +16,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 -----
 
-<br/>
-
 An Extension Attribute script for Mac portable battery health:
 
 ```bash
@@ -79,8 +77,7 @@ Some notes:
 - Not everyone is aware that you can pass multiple arguments to a single `PlistBuddy` command.
   - Although, `zsh` can be a little crybaby about how much can be parsed in 1 stream...
 - I wanted the data to appear in a multi-line format.
-    - I am a multi-line Extension Attribute fan.
-    - Always have been, always will be. 
+    - I am a multi-line Extension Attribute fan. Always have been, always will be. 
     - When some version of Jamf broke my multi-line EAs a few years back, I died a little inside.
 - I also wanted customized, human-readable labels for the attributes.
   - This craziness with the conditionals at the end handles the labels, order & the cases (Intel vs. Apple Silicon).

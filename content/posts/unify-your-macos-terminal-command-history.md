@@ -15,7 +15,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 I'm embarrassed to not have known this until now, but, the joy in the discovery outweighs the pain of embarrassment, so, here goes.
 

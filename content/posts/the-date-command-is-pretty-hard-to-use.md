@@ -15,7 +15,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 So, I don't know about you, but, when I use the `date` command it's usually to match some arcane format. This means I am then scrolling to the bottom of the `date` man page to find the name of the man page where all the format options are listed. Every time is just like the 1st time, but, not in a good way! (It's `strftime` by the way... good luck remembering it.)
 
@@ -73,14 +72,18 @@ Is the `eval` command super easy to read? Hmm, no. Is it easier to read than the
 
 As always, I hope some of you find this useful.
 
-<br/>
+<br/><small>Source: https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571</small>
 
 ---
 
-<br/>
+## Comments
 
-**From the comments — Bartlomiej Sojka:**
+<small>Bartlomiej Sojka</small>
 
 > "Great and very tidy solution indeed! Although usually 'eval is evil', this one seems pretty much unexploitable. I've always avoided running plain `date` multiple times by using epoch as a source format for later conversion, i.e.: `EPOCH=$(date +%s); date -jf "%s" ${EPOCH} "+%T"` — This however doesn't solve the `strftime` 'pain' problem, so kudos."
 
-<br/><small>Source: https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571</small>
+
+
+
+
+

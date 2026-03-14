@@ -15,23 +15,26 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
 For whatever reason, there was a day when the Mac admins slack was particularly goofy & there was a call for poems. I posted this haiku:
 
-> I have a problem.\
-> Use regular expression.\
-> I have two problems.
+> I have a problem\
+> Use regular expression\
+> I have two problems
 
 I can't take credit for the joke above, only for formulating it as a haiku. The origin goes back into the lore of computing. Here's a good summary: https://arstechnica.com/information-technology/2014/05/what-is-meant-by-now-you-have-two-problems/
 
-The [regular expression syntax](https://en.wikipedia.org/wiki/Regular_expression) is an amazing human achievement. (Really!) The addition of regex values in Jamf Pro Smart Groups (which I have used a lot) probably made the idea of using them even more appealing. Eventually, most Mac admins encounter a situation where they believe regex may be the answer to their problem. Often, it has something to do with date / time stamps, or, version strings.
+The [regular expression syntax](https://en.wikipedia.org/wiki/Regular_expression) is an amazing human achievement. (Really!) 
 
-However, there are good ways of handling version string comparisons WITHOUT writing your own regex. You should take advantage of them. Don't introduce potential layers of failure into scripts that are difficult to troubleshoot or understand. Let the very experienced programmers who have done things like create shell environments & binaries for you handle the hard stuff...
+The addition of `regex` values in Jamf Pro Smart Groups (which I have used a lot) probably made the idea of using this kind of matching more appealing, generally, to more people than ever. Eventually, most Mac admins encounter a situation where they believe `regex` may be the answer to their toughest problems. Often, it has something to do with date / time stamps, or, [version strings](https://gist.github.com/talkingmoose/2cf20236e665fcd7ec41311d50c89c0e).
 
-I wrote about one of these tools already: `sort --reverse --version-sort`.
+This is wrong.
 
-Here's another I have been advised to use for a while now. I'm old & slow & stubborn, but, I finally got around to it...
+There are good ways of handling version string comparisons WITHOUT writing your own `regex`. You should take advantage of them. Don't introduce potential layers of failure into scripts that are difficult to troubleshoot or understand. Let the very experienced programmers who have done things like create shell environments & binaries for you handle the hard stuff...
+
+I wrote about [one of these tools](/posts/googalogically-speaking) already: `sort --reverse --version-sort`.
+
+Here's another I've been advised to use for a while now. I'm old & slow & stubborn, but, I finally got around to it...
 
 ```zsh
 #!/bin/zsh

@@ -20,11 +20,9 @@ All you really need to know is the `CFBundleName` or `CFBundleDisplayName` (assu
 
 {{< /notice >}}
 
-</br>
+<br/>
 
 -----
-
-</br>
 
 So, here's a thing:
 

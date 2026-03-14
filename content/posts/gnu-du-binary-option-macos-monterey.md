@@ -15,13 +15,12 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 <br/>
 
 -----
-<br/>
 
-I was using `du` to create an extension attribute & noticed it now has a helpful option which obviates some ugly math:
+I was using `du` the other day to create an extension attribute & noticed that it now has a helpful option which obviates some ugly math:
 
 > `--si` "Human-readable" output. Use unit suffixes: Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte based on powers of 1000.
 
-This is nice because the macOS GUI shows file / folder sizes (& has for a while...) using 1000-byte blocks. My Mac on Big Sur does not show the `--si` option so I am assuming this is a Monterey thing... Not sure?
+This is nice because the macOS GUI shows file / folder sizes (& has for a while...) using 1000-byte blocks. My Mac on Big Sur does not show the `--si` option so I am assuming this is a Monterey thing? Not sure...
 
 E.g., you may have run `du` in a script in the past & got a result like this:
 
@@ -42,10 +41,16 @@ Well,
 The solution was maybe something like this:
 
 ```
-% echo "scale=1; $(du -s ~ | awk '{print $1}')/2000000" | bc | awk '{print int($0+0.5)"G"}'
+% echo "scale=1; \
+$(du -s ~ \
+| awk '{print $1}')/2000000" \
+| bc \
+| awk '{print int($0+0.5)"G"}'
 31G
 ```
-Which, let's face it, is gross. The `--si` option makes all of that unnecessary because it calculates in 1000-byte blocks!
+Which, let's face it, is gross. 
+
+The `--si` option makes all of that unnecessary because it calculates in 1000-byte blocks!
 
 ```
 % du --si -s ~

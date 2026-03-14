@@ -23,7 +23,6 @@ So,  added `jq` to macOS. I do have a funny story about this... The version I
 <br/>
 
 -----
-<br/>
 
 What are we talking about? Handling json in the macOS shell of your choosing. 
 

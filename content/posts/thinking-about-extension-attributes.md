@@ -22,8 +22,6 @@ For Jamf Nation posts under my brock_walters "employee" account, see: <code>http
 
 -----
 
-<br/>
-
 One great thing about JAMF Nation is that awesome workflows can be shared so easily. Sometimes, however, ones that are slightly less than optimal get propagated. The other day I happened to come across an instance of this that I thought maybe I could help explain.
 
 The extension attribute in question:

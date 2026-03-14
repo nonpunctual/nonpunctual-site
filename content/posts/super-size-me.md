@@ -16,8 +16,6 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 -----
 
-<br/>
-
 A while back I posted very excitedly about [an update to the `du` binary](https://community.jamf.com/t5/jamf-pro/gnu-new-du-binary-option-in-macos-12-monterey/td-p/252266). I forgot to post that I actually used it for something...
 
 We pushed [Druva](https://www.druva.com) into production earlier this year for all clients (macOS & Windows). In my opinion Druva is the gold standard for cloud backup.

@@ -22,8 +22,6 @@ So,  added `jq` to macOS. I do have a funny story about this... The version I
 
 -----
 
-<br/>
-
 I am not a huge [Firefox](https://www.firefox.com/en-US/?redirect_source=mozilla-org) user, but, there are many things that are excellent about it & about how it's made. I sometimes get sad it isn't as popular as it used to be especially given the fact that Google is destroying the internet & Google Chrome has no real competition.
 
 Here is a quick example...

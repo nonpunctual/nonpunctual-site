@@ -16,19 +16,17 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 -----
 
-<br/>
-
 It's been a while since I posted anything, so, for (future) me & for you I am posting this script that dynamically updates Static Group membership.
 
 You might be saying to yourself, "Dynamically updating a Static Group is impossibly dumb, because, that's what Smart Groups are for...", but, here is my dilemma:
 
 *I need to assess an endpoint state for which there are no good client-side attributes to collect.*
 
-- In this particular case (if you must know, Microsoft modern vs. basic authentication) there is no definitive data on the endpoint that accurately reflects the sheer number of highly-variable user login behaviors in my environment. 
+- In this particular case (if you must know, Microsoft modern vs. basic authentication) there is no definitive data on endpoints in my environment that accurately reflects the sheer number of highly-variable user login behaviors. 
 
-- It's not that it's too hard, it just can't be accurately done (yes, I've talked to Microsoft... [Notes from the field: Does Outlook for Mac insist on using Basic Authentication?](https://techcommunity.microsoft.com/t5/exchange-team-blog/notes-from-the-field-does-outlook-for-mac-insist-on-using-basic/ba-p/3629510)).
+- It's not that it's too hard, it just can't be accurately done (yes, I've talked to a person I actually know at Microsoft... [Notes from the field: Does Outlook for Mac insist on using Basic Authentication?](https://techcommunity.microsoft.com/t5/exchange-team-blog/notes-from-the-field-does-outlook-for-mac-insist-on-using-basic/ba-p/3629510)).
 
-- The user login data I need (i.e., email addresses that are using basic auth) is available, however, only in the Exchange logs. 
+- The user login data I need (i.e., email addresses that are using basic auth) is available, however, only in the server-side Exchange logs. 
 
 Because our Messaging team can ship me that log data I can use it to create Static Groups. When that data is updated I can dynamically change the membership of my designated Static Group, thus, Dynamic Static Groups™
 
