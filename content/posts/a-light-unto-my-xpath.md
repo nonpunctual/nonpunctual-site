@@ -33,7 +33,7 @@ Hi Armin -
 
 It looks like the `xmllint` version in macOS has indeed been updated:
 
-macOS Monterey;
+macOS Monterey:
 
 ```sh
 % sw_vers -productVersion 12.6.2 % xmllint --version xmllint: using libxml version 20904
