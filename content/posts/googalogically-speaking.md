@@ -37,6 +37,7 @@ Another reason: to talk about scripting logic generally.
 
 # if Google Chrome is installed, collect the version
 googpth='/Applications/Google Chrome.app/Contents/Info.plist'
+
 if [ -e "$googpth" ]
 then
     googvrs="$(/usr/libexec/PlistBuddy -c "print CFBundleShortVersionString" "$googpth")"
@@ -77,7 +78,7 @@ else
 fi
 ```
 
-**1st, research:**
+## Research
 
 - How do you check the current version of the app on the system?
 - How do you determine the current available version?
@@ -85,7 +86,7 @@ fi
 
 You may have a script you've used in the past, a "recipe", snippets from Jamf Nation, StackOverflow, etc. Get the information & assets you need.
 
-**2nd, logic:**
+## Logic
 
 I start with comments that I eventually replace with code. There are 3 cases to handle:
 
@@ -102,17 +103,15 @@ The 1st 2 sections of the script handle cases 1 & 2.
 - Collect the Google Chrome current "stable" version in a variable.
 - Sort these 2 variables using `sort -r --version-sort`
 
-Why use `sort`? 
+## Why use `sort`? 
 
-The Google Chrome version is in [semver](https://semver.org/) format (e.g., `104.5103.64`). 
+The Google Chrome version is in [semver](https://semver.org/) format (e.g., `104.5103.64`). To the shell, this is a string.
 
-To the shell, this is a string. This means the `test` commands (i.e., the brackets) are *comparing strings*, not *evaluating integers* ("greater than" or "less than"). 
+This means the `test` commands (i.e., the brackets) are *comparing strings*, not *evaluating integers* ("greater than" or "less than"). The version strings could be broken into integers at the field separator (the "dot"), or you could do your own `regex` nonsense ([which you should not do](/posts/a-haiku-on-regular-expressions)) but that would mean more variables & lines... 
 
-The version strings could be broken into integers at the field separator (the "dot"), or you could do your own `regex` nonsense ([which you should not do](/posts/a-haiku-on-regular-expressions)) but that would mean more variables & lines... 
+`sort -r --version-sort` does mathematical evaluation by handling semver strings as integers for you. 
 
-`sort -r --version-sort` does the work of handling semver versions as integers & making mathematical comparisons for you.
-
-Using `-r` (reverse) means the newest version number of the 2 will be sorted to the top of the list. We can use this fact, but, this is also where the logic gets a bit tricky...
+Using `-r` (reverse) means the newest version string of the 2 being compared will sort to the top of the list. We can use this behavior, but, this is also where the logic gets a bit tricky...
 
 ### Case 1:
 
@@ -147,9 +146,11 @@ So, the script will proceed to the 3rd section where install stuff happens:
 - Put the URL for getting the `.pkg` in a variable.
 - Get the PID for Google Chrome if it's open.
 - Create a filepath for the `.pkg` download.
-- If Google Chrome is not running (i.e., no PID) download the `.pkg`, install it & delete it after install is complete.
-- If Google Chrome is running be nice to your users by calling a separate Jamf Pro policy to install Google Chrome with user interaction & a deferral option. (Or, [not](https://i.pinimg.com/736x/42/35/98/4235984fef6995115b6dad371bc7b748.jpg).)
+- If Google Chrome ***is not*** running (i.e., no PID):
+  - Download the `.pkg`, install it & delete the `.pkg` (i.e., clean up) after the install is complete.
+- If Google Chrome ***is*** running:
+  - Be nice to your users by calling a separate Jamf Pro policy to install Google Chrome with user interaction & a deferral option. (Or, [not](https://i.pinimg.com/736x/42/35/98/4235984fef6995115b6dad371bc7b748.jpg).)
 
-You may not like the code style I use. You may not like that I use `awk` & `sed`. My hope, though, is that this post transcends all that & helps those of you whose questions about doing this kind of thing are something like "how do I do this kind of thing?"
+You may not like the code style I use. You may not like that I use `awk` & `sed`. My hope, though, is that this post transcends all that & helps those of you whose questions about doing this kind of thing are something like "How do I do this kind of thing?"
 
 <br/><small>Source: https://community.jamf.com/t5/jamf-pro/googalogically-speaking/m-p/260439</small>
