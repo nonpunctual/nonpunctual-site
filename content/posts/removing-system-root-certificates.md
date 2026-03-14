@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/removing-system-root-certificates-is-probably-a-bad-idea-23732
-
 {{< /notice >}}
 
 {{< notice note >}}
@@ -208,3 +206,5 @@ As a final emergency offramp you actually have to type in the word "yes" or "no"
 </br>
 
 As always I hope you find this informative, or, useful, or both, or dangerous & something you should never do. Enjoy! Be Careful!
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/removing-system-root-certificates-is-probably-a-bad-idea-23732</small>

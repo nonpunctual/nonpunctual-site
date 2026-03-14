@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/t5/jamf-pro/apple-cidr/td-p/297600
-
 {{< /notice >}}
 
 <br/>
@@ -156,3 +154,5 @@ done
 >&2 printf "\nOperations complete. Invalidating Jamf API token...\n"
 /usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Bearer $tkninit" "$jamfapi/auth/invalidate-token"; /bin/sleep 1.5; echo; tknchck
 ```
+
+</br><small>Source: https://community.jamf.com/t5/jamf-pro/apple-cidr/td-p/297600</small>

@@ -10,8 +10,6 @@ tags: ["defaults", "jamf nation", "macos", "plist", "plistbuddy", "safari"]
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/surfin-safari-33364
-
 {{< /notice >}}
 
 </br>
@@ -69,3 +67,5 @@ open /System/Applications/Safari.app
 </br>
 
 Enjoy!
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/surfin-safari-33364</small>

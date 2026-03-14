@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/t5/jamf-pro/the-networkquality-is-not-strained/m-p/254301
-
 {{< /notice >}}
 
 <br/>
@@ -75,3 +73,5 @@ done
 ![image1](/images/image1.webp)
 
 ![image2](/images/image2.webp)
+
+</br><small>Source: https://community.jamf.com/t5/jamf-pro/the-networkquality-is-not-strained/m-p/254301</small>

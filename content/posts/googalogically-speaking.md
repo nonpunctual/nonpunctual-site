@@ -10,8 +10,6 @@ tags: ["curl", "jamf nation", "script", "sort"]
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/t5/jamf-pro/googalogically-speaking/m-p/260439
-
 {{< /notice >}}
 
 <br/>
@@ -151,3 +149,5 @@ So, the script will proceed to the 3rd section where install stuff happens:
 - If Google Chrome is running be nice to your users by calling a separate Jamf Pro policy to install Google Chrome with user interaction & a deferral option. (Or, [not](https://i.pinimg.com/736x/42/35/98/4235984fef6995115b6dad371bc7b748.jpg).)
 
 You may not like the code style I use. You may not like that I use `awk` & `sed`. My hope, though, is that this post transcends all that & helps those of you whose questions about doing this kind of thing are something like "how do I do this kind of thing?"
+
+</br><small>Source: https://community.jamf.com/t5/jamf-pro/googalogically-speaking/m-p/260439</small>

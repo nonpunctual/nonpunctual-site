@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/gnu-new-du-binary-option-in-macos-12-monterey-26025
-
 {{< /notice >}}
 
 <br/>
@@ -53,3 +51,5 @@ Which, let's face it, is gross. The `--si` option makes all of that unnecessary 
 % du --si -s ~
 32G    /Users/Brock.Walters
 ```
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/gnu-new-du-binary-option-in-macos-12-monterey-26025</small>

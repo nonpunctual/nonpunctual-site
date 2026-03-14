@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/t5/jamf-pro/yule-logging/td-p/307056
-
 {{< /notice >}}
 
 <br/>
@@ -160,3 +158,5 @@ done
 ops_done
 /usr/bin/curl -LSs -X POST -H 'Accept: application/json' -H "Authorization: Bearer $tknauth" "$jamfapi/auth/invalidate-token"; /bin/sleep 1.5; tknchk; echo; logexit
 ```
+
+</br><small>Source: https://community.jamf.com/t5/jamf-pro/yule-logging/td-p/307056</small>

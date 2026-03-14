@@ -10,8 +10,6 @@ tags: ["apple silicon", "extension attribute", "ioreg", "jamf nation", "jamf pro
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/collect-year-from-mac-marketing-model-name-25812
-
 {{< /notice >}}
 
 <br/>
@@ -96,6 +94,8 @@ echo "<result>${result:-no}</result>"
 **NOTE:** some of the additional tests in the 1st conditional are due to Apple Silicon not necessarily reporting the correct architecture via `uname` if Rosetta is installed.
 
 Feel free to share why having the year seems unnecessary to you, what else you may be using to do this already, or just let me know how bad & silly you think it is. If it's useful to you, enjoy!
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/collect-year-from-mac-marketing-model-name-25812</small>
 
 -----
 

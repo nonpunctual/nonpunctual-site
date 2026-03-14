@@ -10,8 +10,6 @@ tags: ["csv", "druva", "du", "extension attribute", "jamf api", "jamf nation", "
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/super-size-me-27797
-
 {{< /notice >}}
 
 <br/>
@@ -121,3 +119,5 @@ Sample of `.csv` output:
 {{< figure src="/images/home2.webp" alt="Home folder size table" >}}
 
 Enjoy!
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/super-size-me-27797</small>

@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571
-
 {{< /notice >}}
 
 <br/>
@@ -84,3 +82,5 @@ As always, I hope some of you find this useful.
 **From the comments — Bartlomiej Sojka:**
 
 > "Great and very tidy solution indeed! Although usually 'eval is evil', this one seems pretty much unexploitable. I've always avoided running plain `date` multiple times by using epoch as a source format for later conversion, i.e.: `EPOCH=$(date +%s); date -jf "%s" ${EPOCH} "+%T"` — This however doesn't solve the `strftime` 'pain' problem, so kudos."
+
+</br><small>Source: https://community.jamf.com/t5/jamf-pro/the-date-command-is-pretty-hard-to-use/m-p/234571</small>

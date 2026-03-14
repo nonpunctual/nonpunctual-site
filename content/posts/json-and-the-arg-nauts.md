@@ -10,8 +10,6 @@ tags: ["ad","date","dscl","jamf nation","json","script"]
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/json-the-arg-nauts-31917
-
 {{< /notice >}}
 
 {{< notice note >}}
@@ -262,3 +260,5 @@ else
     uimdfnc
 fi
 ```
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/json-the-arg-nauts-31917</small>

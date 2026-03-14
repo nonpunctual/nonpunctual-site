@@ -10,8 +10,6 @@ These posts are being recreated from old Jamf Nation posts not because they are 
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/unify-your-macos-terminal-command-history-21637
-
 {{< /notice >}}
 
 <br/>
@@ -66,3 +64,5 @@ export SHELL_SESSIONS_DISABLE=1
 to your `.zprofile` on macOS Big Sur & later to prevent the sessions folder from recreating itself in every new shell / Terminal window.
 
 See the post at this superuser.com link: [Disable zsh session folder completely](https://superuser.com/questions/1610587/disable-zsh-session-folder-completely) for the full discussion!
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/unify-your-macos-terminal-command-history-21637</small>

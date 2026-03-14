@@ -10,8 +10,6 @@ tags: ["apple silicon", "extension attribute", "intel", "jamf nation", "jamf pro
 
 That, & they were always supposed to be blog posts anyway... I didn't have a blog then.
 
-Jamf Nation post - https://community.jamf.com/general-discussions-2/i-ve-got-the-power-27003
-
 {{< /notice >}}
 
 <br/>
@@ -102,3 +100,5 @@ Anyway, that's all. I know there are fancier ways to do this. OSQuery, Fleet, et
 Fleet (which uses OSQuery) was not reporting this correctly. 🙂 I believe they have addressed this based on my EA (fun!)
 
 I am reporting this in Feedback Assistant — I don't understand why Apple stopped reporting battery manufacturer...
+
+</br><small>Source: https://community.jamf.com/general-discussions-2/i-ve-got-the-power-27003</small>
