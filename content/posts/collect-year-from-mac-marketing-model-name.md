@@ -1,7 +1,7 @@
 ---
 title: "Collect Year From Mac Marketing Model Name"
 date: 2021-10-30
-tags: ["apple", "extension attribute", "ioreg", "jamf pro", "macos", "plistbuddy", "script"]
+tags: ["apple", "extension attribute", "ioreg", "macos", "plistbuddy", "script"]
 ---
 
 {{< notice info >}}
