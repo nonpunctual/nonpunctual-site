@@ -5,20 +5,18 @@ draft: true
 tags: ["synthesizer"]
 ---
 
-</br>
+<br/>
 
 ## Photos
 
-{{< gear-photos "photo1.jpg" "photo2.jpg" >}}
-
-</br>
+{{< gear-photos "roland_mks70.jpg" "color-apple.png" >}}
 
 ## Overview
 
 Brief description of the instrument and your thoughts about it go here.
 
 
-</br>
+<br/>
 
 ## Specification
 
@@ -30,19 +28,19 @@ Brief description of the instrument and your thoughts about it go here.
 | Keyboard | 37 keys |
 | Years produced | 1978–1983 |
 
-</br>
+<br/>
 
 ## What does it sound like?
 
 {{< audio-player "example.mp3" >}}
 
-</br>
+<br/>
 
 ## Who played it?
 
 {{< youtube "dQw4w9WgXcQ" >}}
 
-</br>
+<br/>
 
 ## What songs use it?
 

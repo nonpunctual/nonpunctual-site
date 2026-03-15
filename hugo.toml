@@ -186,7 +186,7 @@ url = "https://www.linkedin.com/in/brock-walters-247a2990/"
 name = "Twitter"
 icon = "fa-brands fa-x-twitter fa-2x"
 weight = 3
-url = ""
+url = "https://x.com/brockbwalters"
 
 
 # [[params.social]]
@@ -222,9 +222,9 @@ weight = 3
 url = "posts/"
 
 [[languages.en.menu.main]]
-name = "pictures"
+name = "images"
 weight =4
-url = "pictures/"
+url = "images/"
 
 [[languages.en.menu.main]]
 name = "gear"

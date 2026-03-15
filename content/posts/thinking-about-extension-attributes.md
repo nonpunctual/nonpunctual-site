@@ -14,7 +14,7 @@ That, & they were always supposed to be blog posts anyway... I didn't have a blo
 
 {{< notice note >}}
 
-For Jamf Nation posts under my brock_walters "employee" account, see: <code>https://community.jamf.com/search/activity/reactions?userid=45006</code>
+For other Jamf Nation posts under my brock_walters "employee" account, see: <code>https://community.jamf.com/search/activity/reactions?userid=45006</code>
 
 {{< /notice >}}
 

@@ -24,7 +24,7 @@ So,  added `jq` to macOS. I do have a funny story about this... The version I
 
 -----
 
-What are we talking about? Handling json in the macOS shell of your choosing. 
+What are we talking about? Handling JSON in the macOS shell of your choosing. 
 
 Why? 
 
@@ -39,9 +39,9 @@ Why?
   - `jpt`: https://www.brunerd.com/blog/2022/02/01/jpt-1-0-can-deal-with-multiple-json-texts/
   - `ljt`: https://www.brunerd.com/blog/2022/02/22/ljt-1-0-0-a-little-json-tool-for-your-shell-script/
 
-  I have used `ljt` in production. It's lightweight & works great. Once you're on Joel's blog, check out ALL of his `json` related posts!
+  I have used `ljt` in production. It's lightweight & works great. Once you're on Joel's blog, check out ALL of his JSON related posts!
 
-- This post inspired much ado in the Mac Admins Slack channels regarding parsing `json` data:
+- This post inspired much ado in the Mac Admins Slack channels regarding parsing JSON data:
 
   https://paulgalow.com/how-to-work-with-json-api-data-in-macos-shell-scripts/
 
@@ -51,11 +51,11 @@ Why?
 
   https://github.com/RandomApplications/JSON-Shell-Tools-for-macOS/tree/main
 
-- A somewhat recent update to the `sqlite3` binary included `json` parsing within tables, but, `sqlite3` can also be called to process `json` on the command line:
+- A somewhat recent update to the `sqlite3` binary included JSON parsing within tables, but, `sqlite3` can also be called to process JSON on the command line:
 
   https://sqlite.org/json1.html
 
-The fact that AppleScript / `osascript` supports JavaScript is nice, but, in the context of these discussions I am wary of how much support is actually put behind AppleScript or `JXA` & I fear that at some point they just might go away. This makes figuring out how to use the [SQLite JSON capabilities](https://sqlite.org/json1.html) more interesting? Critical? (Apple uses SQLite pretty much everywhere & I would bet on that binary sticking around for a while...)
+The fact that AppleScript / `osascript` supports JavaScript is nice, but, in the context of these discussions I am wary of how much support is actually put behind AppleScript or JXA & I fear that at some point they just might go away. This makes figuring out how to use the [SQLite JSON capabilities](https://sqlite.org/json1.html) more interesting? Critical? (Apple uses SQLite pretty much everywhere & I would bet on that binary sticking around for a while...)
 
 - Very smart people like Bart Reardon (of [swiftDialog](https://swiftdialog.app/) fame!) are already playing around with this:
 
@@ -70,7 +70,7 @@ In one of my environments AD lockouts were used as a security measure against ma
 This script does some weird things:
 
 - It collects `dscl` data from AD as a `.plist`
-- Because of this, the data can be CONVERTED to `json`
+- Because of this, the data can be *converted* to JSON
   - This is done by stripping off the `dscl` keys & parsing it through `plutil`
   - Definitely [not my invention](https://scriptingosx.com/2018/07/parsing-dscl-output-in-scripts/)
 - It converts the date / time formats AD uses (3 different formats!) to "ultra-human-readable dates"

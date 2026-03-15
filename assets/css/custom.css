@@ -149,25 +149,12 @@ body.colorscheme-dark .mermaid line.today {
   opacity: 0.7;
 }
 
-.people {
+.post-people {
   display: inline-block;
 }
 
-.people .separator {
+.post-people .separator {
   margin: 0 0.3rem;
-}
-
-.gear-photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.gear-photos img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .audio-player {
@@ -287,19 +274,19 @@ pre {
   margin-left: 0.15em;
 }
 
-.pictures-category {
+.images-category {
   margin-top: 1.65rem;
   margin-bottom: 5rem;
   opacity: 0.65;
 }
 
-.pictures-grid {
+.images-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 4px;
 }
 
-.pictures-thumb img {
+.images-thumb img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -330,9 +317,6 @@ pre {
   object-fit: contain;
 }
 
-.avatar a {
-  cursor: pointer;
-}
 
 .avatar img {
   width: 100%;

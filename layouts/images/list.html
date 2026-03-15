@@ -2,7 +2,7 @@
   {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
-  <section class="container pictures">
+  <section class="container images">
     <header>
       <h1 class="title">
         {{- $total := 0 -}}
@@ -10,27 +10,22 @@
           {{- $total = add $total (len (.Resources.ByType "image")) -}}
         {{- end -}}
         <a class="title-link" href="{{ .Permalink | safeURL }}">
-          pictures <span class="list-count">({{ $total }})</span>
+          images <span class="list-count">({{ $total }})</span>
         </a>
       </h1>
     </header>
     {{ range .Sections }}
-      <div class="pictures-grid">
+      <div class="images-grid">
         {{ range .Resources.ByType "image" }}
           {{ $thumb := .Fill "150x150 Center" }}
-          <a class="pictures-thumb" href="#" data-full="{{ .RelPermalink }}">
+          <a class="images-thumb" href="#" data-full="{{ .RelPermalink }}">
             <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" loading="lazy">
           </a>
         {{ end }}
       </div>
-      <h3 class="pictures-category">{{ .Title }}</h3>
+      <h3 class="images-category">{{ .Title }}</h3>
     {{ end }}
   </section>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <img id="lightbox-img" src="" alt="">
-  </div>
-
-  {{ $js := resources.Get "js/lightbox.js" }}
-  <script src="{{ $js.RelPermalink }}"></script>
+  {{ partial "lightbox.html" . }}
 {{ end }}

@@ -1,0 +1,6 @@
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+{{ $js := resources.Get "js/lightbox.js" }}
+<script src="{{ $js.RelPermalink }}"></script>

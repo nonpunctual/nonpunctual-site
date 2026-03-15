@@ -2,7 +2,7 @@
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightbox-img');
 
-  document.querySelectorAll('.pictures-thumb').forEach(function(thumb) {
+  document.querySelectorAll('.images-thumb').forEach(function(thumb) {
     thumb.addEventListener('click', function(e) {
       e.preventDefault();
       lightboxImg.src = this.dataset.full;

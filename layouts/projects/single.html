@@ -21,13 +21,13 @@
           </div>
           {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
           {{ with .Params.people }}
-          <div class="people">
+          <div class="post-people">
             <i class="fa-solid fa-user" aria-hidden="true"></i>
             {{- range $index, $person := . -}}
               {{- if gt $index 0 }}
                 <span class="separator">•</span>
               {{- end }}
-              <span class="person">{{ $person }}</span>
+              <span class="post-person">{{ $person }}</span>
             {{- end }}
           </div>
           {{ end }}

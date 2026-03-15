@@ -1,5 +1,19 @@
-<div class="gear-photos">
-  {{ range .Params }}
-  <img src="/images/gear/{{ . }}" alt="">
+{{ $params := .Params }}
+{{ $first := index $params 0 }}
+{{ $rest := after 1 $params }}
+
+{{ if $first }}
+<figure>
+  <img src="/images/{{ $first }}" alt="">
+</figure>
+{{ end }}
+
+{{ if $rest }}
+<div class="images-grid">
+  {{ range $rest }}
+  <a class="images-thumb" href="#" data-full="/images/{{ . }}">
+    <img src="/images/{{ . }}" alt="" loading="lazy">
+  </a>
   {{ end }}
 </div>
+{{ end }}

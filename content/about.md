@@ -82,3 +82,16 @@ Brock Walters is nonpunctual. He's too late to be publishing his first website. 
 **Wanna-be Dog Owner** 🐶
 
 : blah
+
+<br/>
+
+---
+
+###### Dedication
+
+This website is dedicated to the memory of [Charles Edge](https://en.wikipedia.org/wiki/Charles_Edge_(computer_scientist)) whose blog taught me & inspired me.
+
+I was glad to be his friend. I hope that, even though I don't know even a fraction of what Charles knew, there may be something that someoene finds useful or funny or inspiring here. 
+
+<small>- bw 20260314</small>
+
