@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Launchd on nonpunctual</title><link>https://www.nonpunctual.org/tags/launchd/</link><description>Recent content in Launchd on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 15 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/launchd/index.xml" rel="self" type="application/rss+xml"/><item><title>Migration "Assistant"</title><link>https://www.nonpunctual.org/posts/migration-assistant/</link><pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/migration-assistant/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;UPDATE 1:&lt;/strong&gt; 20260305&lt;/p&gt;
+&lt;p&gt;When I wrote this script, it was intentionally for blocking Migration Assistant.app - I re-wrote it so any app can be blocked this way just by setting the variables at the top.&lt;/p&gt;</description></item></channel></rss>

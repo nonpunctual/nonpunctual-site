@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Extension Attribute on nonpunctual</title><link>https://www.nonpunctual.org/tags/extension-attribute/</link><description>Recent content in Extension Attribute on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/extension-attribute/index.xml" rel="self" type="application/rss+xml"/><item><title>JSON &amp; the Arg-nauts</title><link>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</link><pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; &lt;del&gt;Something I thought would never happen has happened. Since the beta features are under NDA, I guess I can&amp;rsquo;t really say what it is, but, IYKYK, &amp;amp;, it makes everything in this post mostly obsolete. :) Cheers.&lt;/del&gt;&lt;/p&gt;</description></item><item><title>Super Size Me</title><link>https://www.nonpunctual.org/posts/super-size-me/</link><pubDate>Thu, 23 Jun 2022 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/super-size-me/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;A while back I posted very excitedly about &lt;a href="https://community.jamf.com/t5/jamf-pro/gnu-new-du-binary-option-in-macos-12-monterey/td-p/252266" class="external-link" target="_blank" rel="noopener"&gt;an update to the &lt;code&gt;du&lt;/code&gt; binary&lt;/a&gt;. I forgot to post that I actually used it for something&amp;hellip;&lt;/p&gt;</description></item><item><title>I've Got the Power</title><link>https://www.nonpunctual.org/posts/ive-got-the-power/</link><pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/ive-got-the-power/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;An Extension Attribute script for Mac portable battery health:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;#shellcheck disable=SC2207&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;if&lt;/span&gt; ! /usr/sbin/sysctl -n hw.model &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; /usr/bin/grep -q -i &lt;span style="color:#a3be8c"&gt;&amp;#39;book&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&amp;lt;result&amp;gt;no&amp;lt;/result&amp;gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;exit&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;IFS&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;$&amp;#39;\n&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pwrdata&lt;span style="color:#81a1c1"&gt;=(&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;/usr/libexec/PlistBuddy &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_health_info:sppower_battery_health&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_health_info:sppower_battery_cycle_count&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_health_info:sppower_battery_health_maximum_capacity&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_charge_info:sppower_battery_max_capacity&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_model_info:sppower_battery_manufacturer&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_model_info:sppower_battery_firmware_version&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_model_info:sppower_battery_hardware_revision&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; -c &lt;span style="color:#a3be8c"&gt;&amp;#34;print 0:_items:0:sppower_battery_model_info:sppower_battery_cell_revision&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; /dev/stdin &lt;span style="color:#81a1c1"&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;/usr/sbin/system_profiler -xml SPPowerDataType&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; 2&amp;gt; /dev/null&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;result&lt;span style="color:#81a1c1"&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Health = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[0]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Cycle Count = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[1]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;if&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;[[&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[2]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;==&lt;/span&gt; *&lt;span style="color:#a3be8c"&gt;&amp;#39;%&amp;#39;&lt;/span&gt;* &lt;span style="color:#81a1c1"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Max Capacity = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[2]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Max Capacity = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[2]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt; mAh&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;if&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;[&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;/usr/sbin/sysctl -in hw.optional.arm64&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#b48ead"&gt;1&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;]&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; /usr/sbin/sysctl -n machdep.cpu.brand_string &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; /usr/bin/grep -q &lt;span style="color:#a3be8c"&gt;&amp;#39;Apple&amp;#39;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; /usr/bin/uname -v &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; /usr/bin/grep -q &lt;span style="color:#a3be8c"&gt;&amp;#39;ARM64&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; i&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#b48ead"&gt;5&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;# Apple Silicon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; i&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#b48ead"&gt;6&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;# Intel&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Manufacturer = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[i-3]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Firmware Version = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[i-2]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Hardware Revision = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[i-1]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;Cell Revision = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;pwrdata&lt;span style="color:#eceff4"&gt;[i]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&amp;lt;result&amp;gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;result&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;lt;/result&amp;gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Some notes:&lt;/p&gt;</description></item><item><title>Collect Year From Mac Marketing Model Name</title><link>https://www.nonpunctual.org/posts/collect-year-from-mac-marketing-model-name/</link><pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/collect-year-from-mac-marketing-model-name/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;ve seen a few tricks for getting what Apple calls the Marketing Model name of a Mac in Terminal. One uses the last 4 characters of the serial number in a &lt;code&gt;curl&lt;/code&gt; command. This seems to work (it requires the &lt;code&gt;-L&lt;/code&gt; flag on &lt;code&gt;curl&lt;/code&gt;). It may stop working because of changes to Apple serial numbers.&lt;/p&gt;</description></item><item><title>Thinking About Extension Attributes</title><link>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</link><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;For other Jamf Nation posts under my brock_walters &amp;ldquo;employee&amp;rdquo; account, see: &lt;code&gt;&lt;a href="https://community.jamf.com/search/activity/reactions?userid=45006" class="external-link" target="_blank" rel="noopener"&gt;https://community.jamf.com/search/activity/reactions?userid=45006&lt;/a&gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;One great thing about JAMF Nation is that awesome workflows can be shared so easily. Sometimes, however, ones that are slightly less than optimal get propagated. The other day I happened to come across an instance of this that I thought maybe I could help explain.&lt;/p&gt;</description></item></channel></rss>

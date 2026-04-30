@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Osascript on nonpunctual</title><link>https://www.nonpunctual.org/tags/osascript/</link><description>Recent content in Osascript on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/osascript/index.xml" rel="self" type="application/rss+xml"/><item><title>No Free Space For Complexity</title><link>https://www.nonpunctual.org/posts/no-free-space-for-complexity/</link><pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/no-free-space-for-complexity/</guid><description>&lt;p&gt;It is amazing how systems can be connected today compared to 10-15 years ago.&lt;/p&gt;
+&lt;p&gt;Enterprise chat platforms were nascent, but ascendant then. Now, all sorts of fancy stuff probably happens in your chat app. Maybe you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;get notifications about computers &amp;amp; servers being configured&lt;/li&gt;
+&lt;li&gt;make tickets in a help desk system&lt;/li&gt;
+&lt;li&gt;do AI searches with bots in Salesforce data&lt;/li&gt;
+&lt;li&gt;get AI-generated sentiment summaries from customer calls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The sky is the limit! (Well, the sky, the amount of 💰 you have to spend on integrations, the complexity of your tools &amp;amp; the patience your IT person has to configure all of it&amp;hellip;)&lt;/p&gt;</description></item><item><title>Migration "Assistant"</title><link>https://www.nonpunctual.org/posts/migration-assistant/</link><pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/migration-assistant/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;UPDATE 1:&lt;/strong&gt; 20260305&lt;/p&gt;
+&lt;p&gt;When I wrote this script, it was intentionally for blocking Migration Assistant.app - I re-wrote it so any app can be blocked this way just by setting the variables at the top.&lt;/p&gt;</description></item><item><title>JSON &amp; the Arg-nauts</title><link>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</link><pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; &lt;del&gt;Something I thought would never happen has happened. Since the beta features are under NDA, I guess I can&amp;rsquo;t really say what it is, but, IYKYK, &amp;amp;, it makes everything in this post mostly obsolete. :) Cheers.&lt;/del&gt;&lt;/p&gt;</description></item><item><title>Yule Logging</title><link>https://www.nonpunctual.org/posts/yule-logging/</link><pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/yule-logging/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;As it is the holiday season, I wanted to offer up a little gratitude in the form of 🎁 boilerplate code 🎁 related to topics that come up in the Mac admins #scripting &amp;amp; #bash channels again &amp;amp; again. I hope people find it here &amp;amp; find it useful.&lt;/p&gt;</description></item><item><title>Apple CIDR</title><link>https://www.nonpunctual.org/posts/apple-cidr/</link><pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/apple-cidr/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;It&amp;rsquo;s been a while so here is something that you may never need, or, you have something clever that you already use for this &amp;amp; I am too dumb to know about it, or, maybe, someone will find it useful.&lt;/p&gt;</description></item><item><title>Dynamic Token Of Static Appreciation</title><link>https://www.nonpunctual.org/posts/dynamic-token-of-static-appreciation/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/dynamic-token-of-static-appreciation/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;It&amp;rsquo;s been a while since I posted anything, so, for (future) me &amp;amp; for you I am posting this script that dynamically updates Static Group membership.&lt;/p&gt;</description></item><item><title>Firefoxy</title><link>https://www.nonpunctual.org/posts/firefoxy/</link><pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/firefoxy/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;So,  added &lt;code&gt;jq&lt;/code&gt; to macOS. I do have a funny story about this&amp;hellip; The version I will tell here in public is: I was told that would never happen &amp;amp; then it did!&lt;/p&gt;</description></item><item><title>The networkQuality Is Not Strained</title><link>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;I posted this in the Mac admins Slack &amp;amp; kind of forgot to post it here&amp;hellip;&lt;/p&gt;</description></item><item><title>"Automating" the Mac Evaluation Utility.app (MEU)</title><link>https://www.nonpunctual.org/posts/automating-the-mac-evaluation-utility-app/</link><pubDate>Fri, 12 Nov 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/automating-the-mac-evaluation-utility-app/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;This is a (pretty dumb) script that will automate the execution of the &amp;ldquo;Mac Evaluation Utility&amp;rdquo; v. 4.0.1&lt;/p&gt;</description></item></channel></rss>

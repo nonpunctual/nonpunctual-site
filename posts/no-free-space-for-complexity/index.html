@@ -1,0 +1,108 @@
+<!doctype html><html lang=en><head><title>No Free Space For Complexity · nonpunctual</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta http-equiv=Content-Security-Policy content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self' https://www.youtube.com https://embed.music.apple.com https://giscus.app; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/ https://giscus.app; connect-src 'self' https://www.google-analytics.com https://giscus.app;"><meta name=author content="brock walters"><meta name=description content="A script & Launch Daemon combination that notifies end users when disk space runs low."><meta name=keywords content="technology,music,instruments,personal.contact"><meta name=twitter:card content="summary"><meta name=twitter:title content="No Free Space For Complexity"><meta name=twitter:description content="A script & Launch Daemon combination that notifies end users when disk space runs low."><meta property="og:url" content="https://www.nonpunctual.org/posts/no-free-space-for-complexity/"><meta property="og:site_name" content="nonpunctual"><meta property="og:title" content="No Free Space For Complexity"><meta property="og:description" content="A script & Launch Daemon combination that notifies end users when disk space runs low."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-03-31T00:00:00+00:00"><meta property="article:modified_time" content="2026-03-31T00:00:00+00:00"><meta property="article:tag" content="Apple"><meta property="article:tag" content="Applescript"><meta property="article:tag" content="Bash"><meta property="article:tag" content="Bc"><meta property="article:tag" content="Daemon"><meta property="article:tag" content="Jxa"><link rel=canonical href=https://www.nonpunctual.org/posts/no-free-space-for-complexity/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.f6b1b35a7b02521b25338f6cf58975f9980a6c12847763fe35a48307758cd1e7.css integrity="sha256-9rGzWnsCUhslM49s9Yl1+ZgKbBKEd2P+NaSDB3WM0ec=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.ad48f476275974885bdc03d5251e3cdbe1678c54a63ff772376b0ed2adc468dd.css integrity="sha256-rUj0didZdIhb3APVJR482+FnjFSmP/dyN2sO0q3EaN0=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/custom.min.6db7075db636634528b83980ddb96fb0230cb4954bc5daad8c145ccec46c9f93.css integrity="sha256-bbcHXbY2Y0UouDmA3blvsCMMtJVLxdqtjBRczsRsn5M=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;600;700&display=swap"></head><body class="preload-transitions colorscheme-dark"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://www.nonpunctual.org/>nonpunctual
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw fa-lg" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/tags/>tags <i class="fa-solid fa-tag fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/projects/>projects <i class="fa-solid fa-wrench fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/posts/>posts <i class="fa-solid fa-align-left fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/places/>places <i class="fa-regular fa-compass fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/images/>images <i class="fa-solid fa-images fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/gear/>gear <i class="fa-solid fa-wave-square fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/contact/>contact <i class="fa-solid fa-envelope fa-fw fa-lg" aria-hidden=true></i></a></li><li class=navigation-item><a class=navigation-link href=/about/>about <i class="fa-solid fa-circle-info fa-fw fa-lg" aria-hidden=true></i></a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=/posts/no-free-space-for-complexity/>No Free Space For Complexity</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar fa-lg" aria-hidden=true></i>
+<time datetime=2026-03-31T00:00:00Z>20260331
+</time></span><span class=word-count><i class="fa-solid fa-file-lines fa-lg" aria-hidden=true></i>
+615 words
+</span><span class=reading-time><i class="fa-solid fa-clock fa-lg" aria-hidden=true></i>
+3m
+</span><span class=list-category><i class="fa-solid fa-align-left fa-lg" aria-hidden=true></i><span class=list-category-label>tech</span></span></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/apple/>Apple</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/applescript/>Applescript</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/bash/>Bash</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/bc/>Bc</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/daemon/>Daemon</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/jxa/>Jxa</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/launchctl/>Launchctl</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/osascript/>Osascript</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/plist/>Plist</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/plistbuddy/>Plistbuddy</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/plutil/>Plutil</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/script/>Script</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/sed/>Sed</a></span></div></div></header><div class=post-content><p>It is amazing how systems can be connected today compared to 10-15 years ago.</p><p>Enterprise chat platforms were nascent, but ascendant then. Now, all sorts of fancy stuff probably happens in your chat app. Maybe you:</p><ul><li>get notifications about computers & servers being configured</li><li>make tickets in a help desk system</li><li>do AI searches with bots in Salesforce data</li><li>get AI-generated sentiment summaries from customer calls</li></ul><p>The sky is the limit! (Well, the sky, the amount of 💰 you have to spend on integrations, the complexity of your tools & the patience your IT person has to configure all of it&mldr;)</p><p>That said, Macs still work pretty much the way they did back then & I have always been a proponent of local notifications.</p><p>Sometimes, a triggered local notification is the right thing to do. But, sometimes, &ldquo;people&rdquo; (I will just call them &ldquo;people&rdquo;) devise very complicated designs for something that could be simple.</p><p>For example:</p><p>Say a power user is editing lots of video. They have a fast computer but it only has a 512GB internal drive. Depending on what they&rsquo;re doing with edits 512GB can get chewed up pretty fast. Suppose this person has an incident - their drive filled up & their computer became unusable.</p><p>If this is not something you&rsquo;ve experienced on a Mac lately, it&rsquo;s still the same kind of problem it&rsquo;s always been. When a Mac drive fills up, macOS loses the ability to write temp files & thus loses its mind.</p><p>So, this complicated person doing this kind of complicated thing wants a complicated solution for a very real problem:</p><blockquote><p>&ldquo;Hey, since my computer is managed & the management system knows how much disk space I have, can I get a Slack notification when my drive is full?&rdquo;</p></blockquote><p>Yes, complicated person, you could. Or, you could have a Launch Daemon running that checks for this locally so you will get the warning even if you are not connected to a network, like this:</p><br><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#5e81ac;font-style:italic>#!/bin/bash
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># set.disk.warn.sh @2026 Fleet Device Management</span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># Brock Walters (brock@fleetdm.com)</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># paths</span>
+</span></span><span style=display:flex><span>plstpth<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;/Library/LaunchDaemons/com.disk.warn.plist&#34;</span>
+</span></span><span style=display:flex><span>scptpth<span style=color:#81a1c1>=</span><span style=color:#a3be8c>&#34;/opt/disk.warn.sh&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># write out script if not found</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>[</span> ! -f <span style=color:#a3be8c>&#34;</span>$scptpth<span style=color:#a3be8c>&#34;</span> <span style=color:#81a1c1>]</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>then</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/bin/cat <span style=color:#a3be8c>&lt;&lt; &#39;EOF&#39; &gt; &#34;$scptpth&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>#!/bin/bash
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>dskfsp=&#34;$(/usr/bin/osascript -l &#39;JavaScript&#39; -e &#34;var freeSpaceBytesRef=Ref(); $.NSURL.fileURLWithPath(&#39;/&#39;).getResourceValueForKeyError(freeSpaceBytesRef, $.NSURLVolumeAvailableCapacityForImportantUsageKey, null); Math.round(freeSpaceBytesRef[0].js / 1000000000)&#34;)&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>dsksiz=&#34;$(/usr/libexec/PlistBuddy -c &#39;print AllDisksAndPartitions:0:Size&#39; /dev/stdin &lt;&lt;&lt; &#34;$(/usr/sbin/diskutil list -plist disk0)&#34;)&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>dskhum=&#34;$((dsksiz/1000000000))&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>dskpct=&#34;$(/usr/bin/bc &lt;&lt;&lt; &#34;scale=2;$dskfsp/$dskhum&#34; | /usr/bin/sed &#39;s/\.//&#39;)&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>if [ &#34;$dskpct&#34; -lt 10 ]
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>then
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>	/usr/bin/osascript -e &#34;display dialog \&#34;Your system disk has 10% or less capacity available.\&#34; buttons {\&#34;OK\&#34;} default button 1 with title \&#34;Disk Space Warning\&#34; with icon file \&#34;System:Library:CoreServices:CoreTypes.bundle:Contents:Resources:AlertStopIcon.icns\&#34;&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>fi
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>EOF</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/bin/chmod <span style=color:#b48ead>755</span> <span style=color:#a3be8c>&#34;</span>$scptpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>/usr/sbin/chown 0:0 <span style=color:#a3be8c>&#34;</span>$scptpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>fi</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#616e87;font-style:italic># write out launch daemon if not found &amp; start it</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>if</span> <span style=color:#81a1c1>[</span> ! -f <span style=color:#a3be8c>&#34;</span>$plstpth<span style=color:#a3be8c>&#34;</span> <span style=color:#81a1c1>]</span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>then</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/bin/cat <span style=color:#a3be8c>&lt;&lt; EOF &gt; &#34;$plstpth&#34;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&lt;!DOCTYPE plist PUBLIC &#34;-//Apple//DTD PLIST 1.0//EN&#34; &#34;http://www.apple.com/DTDs/PropertyList-1.0.dtd&#34;&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&lt;plist version=&#34;1.0&#34;&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>	&lt;dict&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>		&lt;key&gt;Label&lt;/key&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>			&lt;string&gt;disk.warn&lt;/string&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>		&lt;key&gt;ProgramArguments&lt;/key&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>			&lt;array&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>				&lt;string&gt;/bin/sh&lt;/string&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>				&lt;string&gt;$scptpth&lt;/string&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>			&lt;/array&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>		&lt;key&gt;RunAtLoad&lt;/key&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>			&lt;true/&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>		&lt;key&gt;StartInterval&lt;/key&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>			&lt;integer&gt;60&lt;/integer&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>	&lt;/dict&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>&lt;/plist&gt;
+</span></span></span><span style=display:flex><span><span style=color:#a3be8c>EOF</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>/bin/chmod <span style=color:#b48ead>644</span> <span style=color:#a3be8c>&#34;</span>$plstpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>/usr/sbin/chown 0:0 <span style=color:#a3be8c>&#34;</span>$plstpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>/usr/bin/plutil -convert binary1 <span style=color:#a3be8c>&#34;</span>$plstpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>/bin/launchctl bootstrap system <span style=color:#a3be8c>&#34;</span>$plstpth<span style=color:#a3be8c>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#81a1c1;font-weight:700>fi</span>
+</span></span></code></pre></div><p><br><figure><img src=/images/disk-warn.png alt="10% Warning."><figcaption><p>Every 60s annoying enough?</p></figcaption></figure><br></p><p>Highlights:</p><ul><li><code>VolumeAvailableCapacityForImportantUsageKey</code> accurately collects free disk space via <code>JXA</code></li><li><code>diskutil list -plist</code> is parsed with <code>PlistBuddy</code> & prevents goofy parsing of the pretty printed form</li><li><code>bc</code> lets us math & handle the float</li><li><code>sed</code> provides a rounded whole integer for the <code>test</code> command</li><li><code>osascript</code> gives us a plain old AppleScript modal to warn the user about having <code>x%</code> disk space free</li><li>Writing out the script locally lets us create a Launch Daemon to execute it for the disk check</li><li>No external dependencies</li></ul><p>That&rsquo;s it.</p><p>Maybe these solutions won&rsquo;t survive. Maybe they shouldn&rsquo;t? I don&rsquo;t know. I just don&rsquo;t know why everything always has to be as complicated as possible.</p></div></article><div class=comments><script>let s=document.createElement("script");s.src="https://giscus.app/client.js",s.setAttribute("data-repo","nonpunctual/nonpunctual-site"),s.setAttribute("data-repo-id","R_kgDORj6j2A"),s.setAttribute("data-category","Announcements"),s.setAttribute("data-category-id","DIC_kwDORj6j2M4C6Hod"),s.setAttribute("data-mapping","pathname"),s.setAttribute("data-strict","0"),s.setAttribute("data-reactions-enabled","1"),s.setAttribute("data-emit-metadata","0"),s.setAttribute("data-input-position","bottom"),s.setAttribute("data-theme","light"),s.setAttribute("data-lang","en"),s.setAttribute("data-loading","lazy"),s.setAttribute("crossorigin","anonymous"),s.setAttribute("async",""),document.querySelector("div.comments").innerHTML="",document.querySelector("div.comments").appendChild(s)</script></div></section></div><footer class=footer><section class=container>©
+2026
+nonpunctual
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.630de6a29df0d7e621be2ae9b2653ccc2369f18c943d24e007f46c96b6f51b5c.js integrity="sha256-Yw3mop3w1+YhvirpsmU8zCNp8YyUPSTgB/Rslrb1G1w="></script></body></html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on nonpunctual</title><link>https://www.nonpunctual.org/tags/security/</link><description>Recent content in Security on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 17 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Removing System Roots (is probably a bad idea)</title><link>https://www.nonpunctual.org/posts/removing-system-root-certificates/</link><pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/removing-system-root-certificates/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;I haven&amp;rsquo;t tested this recently. I am pretty sure you can&amp;rsquo;t do it. I guess you can test if it&amp;rsquo;s possible by disabling System Integrity Protction (SIP) but that might not even work. The script techniques are still vaguely interesting&amp;hellip;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;There may come a time when you need to delete a System Root certificate. This is not something you should do lightly, but, maybe a cert was installed by an update that you know is bad. Maybe a cert is expired. This isn&amp;rsquo;t a huge deal, but, there&amp;rsquo;s no reason for it to be there.&lt;/p&gt;</description></item><item><title>Thinking About Extension Attributes</title><link>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</link><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;For other Jamf Nation posts under my brock_walters &amp;ldquo;employee&amp;rdquo; account, see: &lt;code&gt;&lt;a href="https://community.jamf.com/search/activity/reactions?userid=45006" class="external-link" target="_blank" rel="noopener"&gt;https://community.jamf.com/search/activity/reactions?userid=45006&lt;/a&gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;One great thing about JAMF Nation is that awesome workflows can be shared so easily. Sometimes, however, ones that are slightly less than optimal get propagated. The other day I happened to come across an instance of this that I thought maybe I could help explain.&lt;/p&gt;</description></item></channel></rss>

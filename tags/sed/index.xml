@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sed on nonpunctual</title><link>https://www.nonpunctual.org/tags/sed/</link><description>Recent content in Sed on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 31 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/sed/index.xml" rel="self" type="application/rss+xml"/><item><title>No Free Space For Complexity</title><link>https://www.nonpunctual.org/posts/no-free-space-for-complexity/</link><pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/no-free-space-for-complexity/</guid><description>&lt;p&gt;It is amazing how systems can be connected today compared to 10-15 years ago.&lt;/p&gt;
+&lt;p&gt;Enterprise chat platforms were nascent, but ascendant then. Now, all sorts of fancy stuff probably happens in your chat app. Maybe you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;get notifications about computers &amp;amp; servers being configured&lt;/li&gt;
+&lt;li&gt;make tickets in a help desk system&lt;/li&gt;
+&lt;li&gt;do AI searches with bots in Salesforce data&lt;/li&gt;
+&lt;li&gt;get AI-generated sentiment summaries from customer calls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The sky is the limit! (Well, the sky, the amount of 💰 you have to spend on integrations, the complexity of your tools &amp;amp; the patience your IT person has to configure all of it&amp;hellip;)&lt;/p&gt;</description></item><item><title>JSON &amp; the Arg-nauts</title><link>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</link><pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/json-and-the-arg-nauts/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;UPDATE:&lt;/strong&gt; &lt;del&gt;Something I thought would never happen has happened. Since the beta features are under NDA, I guess I can&amp;rsquo;t really say what it is, but, IYKYK, &amp;amp;, it makes everything in this post mostly obsolete. :) Cheers.&lt;/del&gt;&lt;/p&gt;</description></item><item><title>Yule Logging</title><link>https://www.nonpunctual.org/posts/yule-logging/</link><pubDate>Thu, 21 Dec 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/yule-logging/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;As it is the holiday season, I wanted to offer up a little gratitude in the form of 🎁 boilerplate code 🎁 related to topics that come up in the Mac admins #scripting &amp;amp; #bash channels again &amp;amp; again. I hope people find it here &amp;amp; find it useful.&lt;/p&gt;</description></item><item><title>A Haiku On Regular Expressions</title><link>https://www.nonpunctual.org/posts/a-haiku-on-regular-expressions/</link><pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/a-haiku-on-regular-expressions/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;For whatever reason, there was a day when the Mac admins slack was particularly goofy &amp;amp; there was a call for poems. I posted this:&lt;/p&gt;</description></item><item><title>Dynamic Token Of Static Appreciation</title><link>https://www.nonpunctual.org/posts/dynamic-token-of-static-appreciation/</link><pubDate>Mon, 08 May 2023 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/dynamic-token-of-static-appreciation/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;It&amp;rsquo;s been a while since I posted anything, so, for (future) me &amp;amp; for you I am posting this script that dynamically updates Static Group membership.&lt;/p&gt;</description></item><item><title>Googalogically Speaking</title><link>https://www.nonpunctual.org/posts/googalogically-speaking/</link><pubDate>Fri, 04 Mar 2022 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/googalogically-speaking/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; This script is dumb. Do not read this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Long version:&lt;/strong&gt; I have seen lots of &amp;ldquo;curl the package then install the package&amp;rdquo; scripts. Some are ghastly, some are complicated (ahem, &lt;code&gt;_APS&lt;/code&gt;&amp;hellip;)&lt;/p&gt;</description></item><item><title>The networkQuality Is Not Strained</title><link>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;I posted this in the Mac admins Slack &amp;amp; kind of forgot to post it here&amp;hellip;&lt;/p&gt;</description></item><item><title>Collect Year From Mac Marketing Model Name</title><link>https://www.nonpunctual.org/posts/collect-year-from-mac-marketing-model-name/</link><pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/collect-year-from-mac-marketing-model-name/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;I&amp;rsquo;ve seen a few tricks for getting what Apple calls the Marketing Model name of a Mac in Terminal. One uses the last 4 characters of the serial number in a &lt;code&gt;curl&lt;/code&gt; command. This seems to work (it requires the &lt;code&gt;-L&lt;/code&gt; flag on &lt;code&gt;curl&lt;/code&gt;). It may stop working because of changes to Apple serial numbers.&lt;/p&gt;</description></item><item><title>Removing System Roots (is probably a bad idea)</title><link>https://www.nonpunctual.org/posts/removing-system-root-certificates/</link><pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/removing-system-root-certificates/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;I haven&amp;rsquo;t tested this recently. I am pretty sure you can&amp;rsquo;t do it. I guess you can test if it&amp;rsquo;s possible by disabling System Integrity Protction (SIP) but that might not even work. The script techniques are still vaguely interesting&amp;hellip;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;There may come a time when you need to delete a System Root certificate. This is not something you should do lightly, but, maybe a cert was installed by an update that you know is bad. Maybe a cert is expired. This isn&amp;rsquo;t a huge deal, but, there&amp;rsquo;s no reason for it to be there.&lt;/p&gt;</description></item><item><title>The date command is pretty hard to use...</title><link>https://www.nonpunctual.org/posts/the-date-command-is-pretty-hard-to-use/</link><pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/the-date-command-is-pretty-hard-to-use/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;So, I don&amp;rsquo;t know about you, but, when I use the &lt;code&gt;date&lt;/code&gt; command it&amp;rsquo;s usually to match some arcane format. This means I am then scrolling to the bottom of the &lt;code&gt;date&lt;/code&gt; man page to find the name of the man page where all the format options are listed. Every time is just like the 1st time, but, not in a good way! (It&amp;rsquo;s &lt;code&gt;strftime&lt;/code&gt; by the way&amp;hellip; good luck remembering it.)&lt;/p&gt;</description></item><item><title>Thinking About Extension Attributes</title><link>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</link><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/thinking-about-extension-attributes/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;For other Jamf Nation posts under my brock_walters &amp;ldquo;employee&amp;rdquo; account, see: &lt;code&gt;&lt;a href="https://community.jamf.com/search/activity/reactions?userid=45006" class="external-link" target="_blank" rel="noopener"&gt;https://community.jamf.com/search/activity/reactions?userid=45006&lt;/a&gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;One great thing about JAMF Nation is that awesome workflows can be shared so easily. Sometimes, however, ones that are slightly less than optimal get propagated. The other day I happened to come across an instance of this that I thought maybe I could help explain.&lt;/p&gt;</description></item></channel></rss>

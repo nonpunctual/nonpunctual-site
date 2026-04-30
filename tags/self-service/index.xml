@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Self Service on nonpunctual</title><link>https://www.nonpunctual.org/tags/self-service/</link><description>Recent content in Self Service on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 15 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/self-service/index.xml" rel="self" type="application/rss+xml"/><item><title>The networkQuality Is Not Strained</title><link>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</link><pubDate>Wed, 15 Dec 2021 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/the-networkquality-is-not-strained/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;hr&gt;
+&lt;p&gt;I posted this in the Mac admins Slack &amp;amp; kind of forgot to post it here&amp;hellip;&lt;/p&gt;</description></item><item><title>Remember that time you wanted all of your Self Service display names to actually match your policy names?</title><link>https://www.nonpunctual.org/posts/self-service-display-names/</link><pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/self-service-display-names/</guid><description>&lt;div class="notice info"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;Info
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;These posts are being re-created from old Jamf Nation posts not because they are the best but because they may have useful things that were mangled in the &lt;a href="https://www.jamf.com/community/jamf-nation/" class="external-link" target="_blank" rel="noopener"&gt;Jamf Nation&lt;/a&gt; transition to its most recent hosting platform.&lt;/p&gt;
+&lt;p&gt;That, &amp;amp; they were always supposed to be blog posts anyway&amp;hellip; I didn&amp;rsquo;t have a blog then.&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="notice note"&gt;
+ &lt;div class="notice-title"&gt;
+ &lt;i class="fa-solid fa-sticky-note" aria-hidden="true"&gt;&lt;/i&gt;Note
+ &lt;/div&gt;
+ &lt;div class="notice-content"&gt;&lt;p&gt;The Jamf Pro API basic authentication method used in this script is deprecated. See the following links for updated auth methods:&lt;/p&gt;</description></item></channel></rss>

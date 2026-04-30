@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fire</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      font-size: 62.5%;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #091520;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6rem;
+      box-sizing: border-box;
+    }
+    body.light { background-color: #fafafa; }
+    a {
+      position: fixed;
+      z-index: 11;
+      top: 1.75rem;
+      left: 2rem;
+      color: #dadada;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 2.47rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    a:hover { color: #42a5f5; }
+    body.light a { color: #212121; }
+    body.light a:hover { color: #4183c4; }
+    .content-wrap {
+      margin-top: 4rem;
+      width: min(calc(100vw - 4rem), calc((100vh - 10rem) * 16 / 9));
+    }
+    .video-wrap {
+      position: relative;
+      width: 100%;
+    }
+    .video-wrap::before {
+      content: "";
+      display: block;
+      padding-top: 56.25%;
+    }
+    iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .caption {
+      text-align: left;
+      margin-bottom: 1rem;
+      color: #dadada;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 2.4rem;
+    }
+    body.light .caption { color: #212121; }
+    #overlay {
+      position: fixed;
+      inset: 0;
+      cursor: pointer;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <a href="/about/">nonpunctual</a>
+  <div class="content-wrap">
+    <p class="caption">Do you have any matches? (You may need to click the window to hear this classic audio!)</p>
+    <div class="video-wrap">
+    <iframe id="yt"
+      src="https://www.youtube.com/embed/IXBiIbRTP7w?autoplay=1&mute=1&controls=1&enablejsapi=1&cc_load_policy=1"
+      allowfullscreen="true"
+      title="YouTube Video"
+    ></iframe>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <script>
+    var scheme = localStorage.getItem('colorscheme') || 'dark';
+    if (scheme === 'light') {
+      document.body.classList.add('light');
+    }
+    document.getElementById('overlay').addEventListener('click', function () {
+      this.remove();
+      var iframe = document.getElementById('yt');
+      iframe.src = 'https://www.youtube.com/embed/IXBiIbRTP7w?autoplay=1&mute=0&controls=1&cc_load_policy=1';
+    });
+  </script>
+</body>
+</html>
