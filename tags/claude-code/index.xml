@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Claude Code on nonpunctual</title><link>https://www.nonpunctual.org/tags/claude-code/</link><description>Recent content in Claude Code on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 11 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/claude-code/index.xml" rel="self" type="application/rss+xml"/><item><title>Add Search To a Hugo Site With Fuse.js</title><link>https://www.nonpunctual.org/posts/add-search-to-a-hugo-site-with-fuse.js/</link><pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/add-search-to-a-hugo-site-with-fuse.js/</guid><description>&lt;br&gt;
+&lt;figure&gt;&lt;img src="https://www.nonpunctual.org/images/fuse.png"
+			alt="Fuse.js"&gt;&lt;figcaption&gt;
+			&lt;p&gt;The search begins.&lt;/p&gt;
+		&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Today I added search on my Hugo static site with &lt;a href="https://www.fusejs.io" class="external-link" target="_blank" rel="noopener"&gt;Fuse.js&lt;/a&gt;. I am unreasonably excited about this for kind of a negative reason:&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve had a lot, A LOT of recent experience with a static site that had pretty disappointing search capability.&lt;/p&gt;
+&lt;p&gt;I found Fuse.js in &lt;a href="https://blowfish.page" class="external-link" target="_blank" rel="noopener"&gt;Blowfish&lt;/a&gt; - a really thoughtful &amp;amp; nice looking Hugo theme that I probably would have used for my site if I&amp;rsquo;d discovered it early.&lt;/p&gt;</description></item><item><title>nonpunctual.org Website</title><link>https://www.nonpunctual.org/projects/nonpunctual.org-website/</link><pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/projects/nonpunctual.org-website/</guid><description>&lt;h2 id="overview"&gt;
+ Overview
+ &lt;a class="heading-link" href="#overview"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I have long threatened to build a website. It&amp;rsquo;s a lot of work, even with help from my buddy Claude.&lt;/p&gt;
+&lt;h2 id="timeline"&gt;
+ Timeline
+ &lt;a class="heading-link" href="#timeline"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In 2002 I was getting pretty serious about computers after a few years of really only using them for music but I didn&amp;rsquo;t believe I could build my own website. So, I hired 2 different web designers for 2 ideas.&lt;/p&gt;</description></item></channel></rss>

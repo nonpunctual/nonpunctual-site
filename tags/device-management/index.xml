@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Device Management on nonpunctual</title><link>https://www.nonpunctual.org/tags/device-management/</link><description>Recent content in Device Management on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/device-management/index.xml" rel="self" type="application/rss+xml"/><item><title>The Endpoint</title><link>https://www.nonpunctual.org/posts/the-endpoint/</link><pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/the-endpoint/</guid><description>&lt;h2 id="what-is-an-endpoint"&gt;
+ What Is an Endpoint?
+ &lt;a class="heading-link" href="#what-is-an-endpoint"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The word &amp;ldquo;endpoint&amp;rdquo; is used a lot in tech. In the device management domain, an endpoint is any managed computer or mobile device that is actively used for work. This can mean servers, but it typically means devices that are deployed &amp;ldquo;1:1&amp;rdquo;, in end user&amp;rsquo;s hands. For most modern organizations 1:1 deployed endpoints are the primary portals to collaboration and productivity.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yq on nonpunctual</title><link>https://www.nonpunctual.org/tags/yq/</link><description>Recent content in Yq on nonpunctual</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.nonpunctual.org/tags/yq/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactively Create Hugo Content With Frontmatter</title><link>https://www.nonpunctual.org/posts/interactively-create-hugo-content-with-frontmatter/</link><pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate><guid>https://www.nonpunctual.org/posts/interactively-create-hugo-content-with-frontmatter/</guid><description>&lt;figure&gt;&lt;img src="https://www.nonpunctual.org/images/hugo.png"
+			alt="Desktop"&gt;&lt;figcaption&gt;
+			&lt;p&gt;The Hugo &amp;ldquo;&lt;a href="https://en.wikipedia.org/wiki/Droste_effect" class="external-link" target="_blank" rel="noopener"&gt;Droste Effect&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+		&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;br&gt;
+&lt;p&gt;I&amp;rsquo;ve been working on &lt;a href="https://www.nonpunctual.org/" class="external-link" target="_blank" rel="noopener"&gt;nonpunctual.org&lt;/a&gt; quite a bit lately. It might not show - websites are harder than they look.&lt;/p&gt;
+&lt;p&gt;One of the things that is very helpful in &lt;a href="https://gohugo.io/" class="external-link" target="_blank" rel="noopener"&gt;Hugo&lt;/a&gt; for creating new content is the &lt;a href="https://gohugo.io/content-management/archetypes/" class="external-link" target="_blank" rel="noopener"&gt;archetypes&lt;/a&gt; schema. Hugo users can create &amp;ldquo;archetype&amp;rdquo; files in their project - &lt;code&gt;.md&lt;/code&gt; file templates that can be populated with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;auto-generated content file metadata (frontmatter)&lt;/li&gt;
+&lt;li&gt;markdown formatting / document structure
+&lt;ul&gt;
+&lt;li&gt;headers&lt;/li&gt;
+&lt;li&gt;lists&lt;/li&gt;
+&lt;li&gt;links&lt;/li&gt;
+&lt;li&gt;raw HTML&lt;/li&gt;
+&lt;li&gt;text&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gohugo.io/content-management/shortcodes/" class="external-link" target="_blank" rel="noopener"&gt;shortcodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can even use archetypes to create directory structures for content (which I am using for photos).&lt;/p&gt;</description></item></channel></rss>
