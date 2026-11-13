@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prince</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      font-size: 62.5%;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      background-color: #091520;
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 6rem;
+      box-sizing: border-box;
+    }
+    body.light { background-color: #fafafa; }
+    a {
+      position: fixed;
+      z-index: 1;
+      top: 1.75rem;
+      left: 2rem;
+      color: #dadada;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 2.47rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    a:hover { color: #42a5f5; }
+    body.light a { color: #212121; }
+    body.light a:hover { color: #4183c4; }
+    img {
+      max-width: 100%;
+      max-height: calc(100vh - 6rem);
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <a href="/about/">nonpunctual</a>
+  <img src="/images/purple-rain.jpg" alt="">
+  <script>
+    var scheme = localStorage.getItem('colorscheme') || 'dark';
+    if (scheme === 'light') {
+      document.body.classList.add('light');
+    }
+  </script>
+</body>
+</html>
